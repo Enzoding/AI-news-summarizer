@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Hacker News",
+    "type": "news",
+    "url": "https://github.com/HackerNews/API",
+    "description": "Hacker News API"
+  },
+  {
+    "name": "VentureBeat AI",
+    "type": "news",
+    "url": "https://venturebeat.com/category/ai/feed/",
+    "description": "VentureBeat AI RSS Feed"
+  },
+  {
+    "name": "arXiv",
+    "type": "papers",
+    "url": "https://arxiv.org/",
+    "description": "arXiv论文库"
+  }
+]
