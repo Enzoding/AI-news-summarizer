@@ -15,11 +15,6 @@ const router = createRouter({
       component: () => import('@/views/ReportDetail.vue')
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('@/views/About.vue')
-    },
-    {
       path: '/:pathMatch(.*)*',
       name: 'not-found',
       component: () => import('@/views/NotFound.vue')

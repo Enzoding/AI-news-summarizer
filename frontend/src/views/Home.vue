@@ -6,7 +6,6 @@
     </div>
     
     <div class="reports-section">
-      <h2 class="section-title">最新日报</h2>
       
       <div v-if="loading" class="loading-container">
         <LoadingSpinner message="正在加载日报..." />

@@ -1,18 +1,6 @@
 <template>
   <router-link :to="`/report/${report.date}`" class="report-card card tech-glow">
-    <div class="report-date">{{ formatDate(report.date) }}</div>
-    <h3 class="report-title">AI行业日报</h3>
-    <p class="report-summary">{{ truncateSummary(report.summary) }}</p>
-    <div class="report-stats">
-      <div class="stat">
-        <span class="stat-icon">📰</span>
-        <span class="stat-value">{{ report.news_count || 0 }}条新闻</span>
-      </div>
-      <div class="stat">
-        <span class="stat-icon">📄</span>
-        <span class="stat-value">{{ report.paper_count || 0 }}篇论文</span>
-      </div>
-    </div>
+    <h3 class="report-title">AI行业日报 {{ formatSimpleDate(report.date) }}</h3>
     <div class="card-overlay">
       <span class="read-more">阅读详情</span>
     </div>
@@ -38,6 +26,14 @@ export default {
         weekday: 'long'
       });
     },
+    formatSimpleDate(dateString) {
+      const date = new Date(dateString);
+      return date.toLocaleDateString('zh-CN', {
+        year: 'numeric',
+        month: 'numeric',
+        day: 'numeric'
+      });
+    },
     truncateSummary(summary) {
       if (!summary) return '';
       return summary.length > 100 ? summary.substring(0, 100) + '...' : summary;
@@ -54,43 +50,16 @@ export default {
   height: 100%;
   position: relative;
   overflow: hidden;
-}
-
-.report-date {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  margin-bottom: 0.5rem;
+  min-height: 120px;
+  justify-content: center;
+  align-items: center;
 }
 
 .report-title {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
   color: var(--primary-color);
   font-weight: 700;
-}
-
-.report-summary {
-  flex-grow: 1;
-  margin-bottom: 1rem;
-  line-height: 1.6;
-  color: var(--text-color);
-}
-
-.report-stats {
-  display: flex;
-  gap: 1rem;
-}
-
-.stat {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-}
-
-.stat-icon {
-  font-size: 1.1rem;
+  text-align: center;
 }
 
 .card-overlay {
