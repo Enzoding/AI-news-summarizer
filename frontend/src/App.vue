@@ -21,6 +21,13 @@ export default {
   components: {
     Navbar,
     Footer
+  },
+  mounted() {
+    // 从本地存储中获取主题设置
+    const savedTheme = localStorage.getItem('theme')
+    if (savedTheme === 'light') {
+      document.body.classList.add('light-theme')
+    }
   }
 }
 </script>

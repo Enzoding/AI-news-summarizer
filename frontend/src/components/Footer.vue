@@ -26,6 +26,12 @@ export default {
   margin-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.light-theme .footer {
+  background-color: rgba(248, 249, 250, 0.8);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .footer-copyright {

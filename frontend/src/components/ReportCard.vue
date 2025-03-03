@@ -60,7 +60,12 @@ export default {
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.05);
   background: linear-gradient(135deg, rgba(30, 30, 30, 0.8), rgba(18, 18, 18, 0.9));
-  transition: all var(--transition-speed) ease;
+  transition: all var(--transition-speed) ease, background 0.3s ease, border-color 0.3s ease;
+}
+
+.light-theme .report-card {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: linear-gradient(135deg, rgba(240, 240, 240, 0.8), rgba(255, 255, 255, 0.9));
 }
 
 .card-content {
@@ -80,6 +85,10 @@ export default {
   background-clip: text;
   color: transparent;
   text-shadow: 0 0 10px rgba(79, 158, 255, 0.3);
+}
+
+.light-theme .report-title {
+  text-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
 }
 
 .card-decoration {
@@ -133,6 +142,10 @@ export default {
   z-index: 3;
 }
 
+.light-theme .card-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+}
+
 .read-more {
   color: white;
   font-weight: 500;
@@ -158,8 +171,12 @@ export default {
 
 .report-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(79, 158, 255, 0.3);
+  box-shadow: 0 10px 25px var(--shadow-color), 0 0 20px var(--glow-color);
   border-color: rgba(79, 158, 255, 0.3);
+}
+
+.light-theme .report-card:hover {
+  border-color: rgba(52, 152, 219, 0.3);
 }
 
 .report-card:hover .card-overlay {
@@ -168,7 +185,7 @@ export default {
 
 .report-card:hover .read-more {
   transform: translateY(0);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px var(--shadow-color);
 }
 
 .report-card:hover .read-more::before {

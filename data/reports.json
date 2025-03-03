@@ -668,5 +668,403 @@
       "papers": []
     },
     "created_at": "2025-02-28T17:28:12.449731"
+  },
+  {
+    "date": "2025-03-03",
+    "summary": "### AI行业日报\n日期: 2025-03-03\n\n#### 1. 行业概述\n今天的AI行业呈现出多样化的发展动态和趋势。主要亮点包括新型内存芯片的发布、AI模型的性能提升以及企业级AI应用的创新。此外，AI在各个领域的应用继续扩大，从智能家居到金融服务，再到娱乐和通信行业。同时，学术界也在不断推进AI技术的理论研究和应用创新。\n\n#### 2. 重要新闻\n\n**新闻1: Micron launches new memory chips to keep up with AI processing**\nMicron推出了其首批1y (1-gamma) DDR5内存芯片样品，旨在满足AI处理的需求。这标志着内存技术的重大进步，有助于提升AI系统的性能和效率。随着AI应用的不断增长，对高性能内存的需求也在增加，Micron的这一举措有望在市场上占据重要地位。\n\n**新闻2: 2025 has already brought us the most performant AI ever: What can we do with these supercharged capabilities (and what’s next)?**\n2025年见证了AI性能的显著提升，从OpenAI的'Deep Research'到DeepMind的'AI co-scientist'，这些进展展示了AI在智能和能力方面的巨大潜力。未来，AI有望在科学研究、医疗、金融等领域发挥更大的作用，推动创新和效率的提升。\n\n**新闻3: OpenAI releases ‘largest, most knowledgable’ model GPT-4.5 with reduced hallucinations and high API price**\nOpenAI发布了GPT-4.5模型，声称其是迄今为止最大、最具知识性的模型。尽管其API价格高昂，但其减少的幻觉（hallucinations）问题和增强的准确性使其在企业应用中具有吸引力。这表明AI模型的商业化进程正在加速，但成本效益仍需进一步评估。\n\n**新闻4: Google makes Gemini Code Assist free with 180,000 code completions per month as AI-powered dev race heats up**\nGoogle宣布Gemini Code Assist免费提供，每月可完成180,000次代码补全。这不仅加剧了AI驱动的开发工具竞争，也为开发者提供了更强大的支持，有助于提高开发效率和代码质量。\n\n**新闻5: Adobe launches first Photoshop mobile app and it has amazing Firefly AI-powered object detection, editing, and effects**\nAdobe推出了首个Photoshop移动应用，配备了Firefly AI驱动的对象检测、编辑和效果功能。这标志着AI在创意软件中的应用进一步深化，为用户提供了更便捷和强大的编辑工具。\n\n#### 3. 学术进展\n\n**论文1: Artificial Intelligence and the Labor Market [pdf]**\n这篇论文探讨了AI对劳动市场的影响，指出AI技术的广泛应用可能导致某些工作岗位的自动化，但同时也创造了新的就业机会。论文强调了劳动力市场需要适应AI技术的快速发展，提出了一些政策建议以应对这一挑战。\n\n**论文2: A mechanically verified garbage collector for OCaml [pdf]**\n该论文介绍了一种为OCaml语言设计的机械验证垃圾回收器，展示了在编程语言和系统软件中应用形式验证的创新方法。通过机械验证，提高了垃圾回收器的可靠性和安全性，为未来软件开发提供了新的思路。\n\n**论文3: OctoTools: Stanford’s open-source framework optimizes LLM reasoning through modular tool orchestration**\nOctoTools是一个由斯坦福大学开发的开源框架，通过模块化工具编排优化大语言模型（LLM）的推理过程。该框架的创新之处在于其灵活性和可扩展性，能够有效地提升LLM在各种应用场景中的表现。\n\n#### 4. 趋势洞察\n\n基于今天的资讯和学术进展，可以看出AI行业的发展趋势和机会主要集中在以下几个方面：\n\n- **硬件技术的进步**：如Micron的新型内存芯片，推动了AI系统性能的提升，为AI应用提供了更强大的硬件支持。\n- **AI模型的性能优化**：GPT-4.5和Phi-4等新模型的发布，展示了AI在准确性和能力方面的持续进步，推动了AI在企业和消费者市场的应用。\n- **AI在特定领域的深化应用**：从Adobe的Photoshop移动应用到Prompt AI的智能家居平台，AI技术在创意软件、智能家居等领域的应用不断深化，提供了更多创新和便利的解决方案。\n- **劳动市场的适应和转型**：AI对劳动市场的影响日益显著，企业和政策制定者需要采取措施，帮助劳动力市场适应这一变化，创造新的就业机会。\n- **开源和协作创新**：如OctoTools等开源框架的出现，促进了AI技术的共享和协作创新，为开发者和研究人员提供了更多的工具和资源。\n\n总体而言，AI行业在2025年继续保持高速发展，技术创新和应用扩展为各行业带来了新的机遇和挑战。",
+    "raw_data": {
+      "news": [
+        {
+          "title": "Man's brain turned to glass by hot Vesuvius ash cloud",
+          "url": "https://www.bbc.com/news/articles/cgr2n8xx5gyo",
+          "source": "Hacker News",
+          "published_at": "2025-02-28T01:32:01",
+          "score": 42,
+          "comments": 8
+        },
+        {
+          "title": "Harvest the sun twice: Agrivoltaics promises sustainable food, energy and water",
+          "url": "https://www.sheffield.ac.uk/news/harvesting-sun-twice-agrivoltaics-shows-promise-sustainable-food-energy-and-water-management-east",
+          "source": "Hacker News",
+          "published_at": "2025-02-28T00:56:14",
+          "score": 40,
+          "comments": 9
+        },
+        {
+          "title": "Hallucinations in code are the least dangerous form of LLM mistakes",
+          "url": "https://simonwillison.net/2025/Mar/2/hallucinations-in-code/",
+          "source": "Hacker News",
+          "published_at": "2025-03-03T03:15:58",
+          "score": 230,
+          "comments": 173
+        },
+        {
+          "title": "The Pentium contains a complicated circuit to multiply by three",
+          "url": "https://www.righto.com/2025/03/pentium-multiplier-adder-reverse-engineered.html",
+          "source": "Hacker News",
+          "published_at": "2025-03-03T02:04:35",
+          "score": 267,
+          "comments": 91
+        },
+        {
+          "title": "Substance in broccoli, celery inhibits graying of black hair",
+          "url": "https://www.asahi.com/ajw/articles/15604493",
+          "source": "Hacker News",
+          "published_at": "2025-02-28T06:10:57",
+          "score": 5,
+          "comments": 2
+        },
+        {
+          "title": "Show HN: Prompting LLMs in Bash scripts",
+          "url": "https://elijahpotter.dev/articles/prompting_large_language_models_in_bash_scripts",
+          "source": "Hacker News",
+          "published_at": "2025-02-28T03:46:55",
+          "score": 55,
+          "comments": 4
+        },
+        {
+          "title": "Gödel's theorem debunks the most important AI myth – Roger Penrose [video]",
+          "url": "https://www.youtube.com/watch?v=biUfMZ2dts8",
+          "source": "Hacker News",
+          "published_at": "2025-03-03T02:31:33",
+          "score": 125,
+          "comments": 252
+        },
+        {
+          "title": "I struggled with Git, so I'm making a game to spare others the pain",
+          "url": "https://initialcommit.com/blog/im-making-a-git-game",
+          "source": "Hacker News",
+          "published_at": "2025-03-02T22:18:11",
+          "score": 171,
+          "comments": 230
+        },
+        {
+          "title": "Morphing robot turns challenging terrain to its advantage",
+          "url": "https://actu.epfl.ch/news/morphing-robot-turns-challenging-terrain-to-its--2/",
+          "source": "Hacker News",
+          "published_at": "2025-02-27T21:36:10",
+          "score": 25,
+          "comments": 2
+        },
+        {
+          "title": "Evidence that our ancestors lived in rainforests 150k years ago",
+          "url": "https://www.sheffield.ac.uk/news/scientists-find-earliest-evidence-our-ancestors-lived-rainforests-150000-years-ago",
+          "source": "Hacker News",
+          "published_at": "2025-02-28T05:24:50",
+          "score": 29,
+          "comments": 4
+        },
+        {
+          "title": "Show HN: Recommendarr – AI Driven Recommendations Based on Sonarr/Radarr Media",
+          "url": "https://github.com/fingerthief/recommendarr",
+          "source": "Hacker News",
+          "published_at": "2025-03-02T22:25:21",
+          "score": 76,
+          "comments": 35
+        },
+        {
+          "title": "A mechanically verified garbage collector for OCaml [pdf]",
+          "url": "https://kcsrk.info/papers/verifiedgc_feb_25.pdf",
+          "source": "Hacker News",
+          "published_at": "2025-02-27T13:38:07",
+          "score": 26,
+          "comments": 3
+        },
+        {
+          "title": "Artificial Intelligence and the Labor Market [pdf]",
+          "url": "https://www.nber.org/system/files/working_papers/w33509/w33509.pdf",
+          "source": "Hacker News",
+          "published_at": "2025-03-03T06:14:01",
+          "score": 20,
+          "comments": 2
+        },
+        {
+          "title": "Nvidia GPU on bare metal NixOS Kubernetes cluster explained",
+          "url": "https://fangpenlin.com/posts/2025/03/01/nvidia-gpu-on-bare-metal-nixos-k8s-explained/",
+          "source": "Hacker News",
+          "published_at": "2025-03-03T04:26:21",
+          "score": 33,
+          "comments": 14
+        },
+        {
+          "title": "Changes in brain's 'sugar shield' could be key to understanding effects of aging",
+          "url": "https://news.stanford.edu/stories/2025/02/study-links-the-sugars-on-cell-surfaces-to-brain-resilience",
+          "source": "Hacker News",
+          "published_at": "2025-03-03T01:53:04",
+          "score": 25,
+          "comments": 1
+        },
+        {
+          "title": "Most IT companies fail to serve security.txt for RFC 9116 in 2025",
+          "url": "https://blog.hartwork.org/posts/companies-fail-to-serve-security-txt-rfc-9116/",
+          "source": "Hacker News",
+          "published_at": "2025-03-03T06:33:21",
+          "score": 38,
+          "comments": 24
+        },
+        {
+          "title": "Mucins keep the brain safe and could guard against ageing",
+          "url": "https://www.nature.com/articles/d41586-025-00554-w",
+          "source": "Hacker News",
+          "published_at": "2025-02-28T16:31:27",
+          "score": 168,
+          "comments": 54
+        },
+        {
+          "title": "GPT-4.5: \"Not a frontier model\"?",
+          "url": "https://www.interconnects.ai/p/gpt-45-not-a-frontier-model",
+          "source": "Hacker News",
+          "published_at": "2025-03-02T22:47:56",
+          "score": 155,
+          "comments": 147
+        },
+        {
+          "title": "The Empty Promise of AI-Generated Creativity",
+          "url": "https://hey.paris/posts/genai/",
+          "source": "Hacker News",
+          "published_at": "2025-03-03T09:13:51",
+          "score": 6,
+          "comments": 1
+        },
+        {
+          "title": "Passing the Buck: The story of the 2022 Wings Over Dallas air show collision",
+          "url": "https://admiralcloudberg.medium.com/passing-the-buck-the-story-of-the-2022-wings-over-dallas-air-show-collision-9bbe5947297b",
+          "source": "Hacker News",
+          "published_at": "2025-03-02T08:47:23",
+          "score": 86,
+          "comments": 24
+        },
+        {
+          "title": "How to gain code execution on hundreds of millions of people and popular apps",
+          "url": "https://kibty.town/blog/todesktop/",
+          "source": "Hacker News",
+          "published_at": "2025-03-01T05:05:35",
+          "score": 1120,
+          "comments": 295
+        },
+        {
+          "title": "President on Brink of Bailout for Bitcoin",
+          "url": "https://www.citationneeded.news/issue-78/",
+          "source": "Hacker News",
+          "published_at": "2025-03-03T10:41:21",
+          "score": 23,
+          "comments": 6
+        },
+        {
+          "title": "China tells its AI leaders to avoid U.S. travel over security concerns",
+          "url": "https://www.wsj.com/world/china/china-ai-us-travel-advisory-ff248349",
+          "source": "Hacker News",
+          "published_at": "2025-03-01T21:28:03",
+          "score": 429,
+          "comments": 424
+        },
+        {
+          "title": "Show HN: I took over Painteresque, a 14 year old Objective-C app and rebuilt it",
+          "url": "https://apps.apple.com/ca/app/painteresque-photo-to-sketch/id6742038583",
+          "source": "Hacker News",
+          "published_at": "2025-03-02T02:30:51",
+          "score": 108,
+          "comments": 22
+        },
+        {
+          "title": "Micron launches new memory chips to keep up with AI processing",
+          "url": "https://venturebeat.com/games/micron-launches-new-memory-chips-to-keep-up-with-ai-processing/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-03-03T05:00:00",
+          "summary": "Micron announced its first 1y (1-gamma) DDR5 memory chip samples this week, and it says this is part of its contribution to systems that keep up with AI."
+        },
+        {
+          "title": "2025 has already brought us the most performant AI ever: What can we do with these supercharged capabilities (and what’s next)?",
+          "url": "https://venturebeat.com/ai/2025-has-already-brought-us-the-most-performant-ai-ever-what-can-we-do-with-these-supercharged-capabilities-and-whats-next/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-03-03T01:18:00",
+          "summary": "From OpenAI's 'Deep Research' to DeepMind's 'AI co-scientist,' next-gen AI is smarter and astoundingly capable."
+        },
+        {
+          "title": "Weak cyber defenses are exposing critical infrastructure — how enterprises can proactively thwart cunning attackers to protect us all",
+          "url": "https://venturebeat.com/security/how-weak-cybersecurity-threatens-critical-infrastructure-and-what-enterprises-must-do-now/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-03-01T20:05:00",
+          "summary": "If businesses fail to up their cybersecurity game, the systems everyone relies on could face serious and devastating disruptions."
+        },
+        {
+          "title": "GPT-4.5 for enterprise: Do its accuracy and knowledge justify the cost?",
+          "url": "https://venturebeat.com/ai/gpt-4-5-for-enterprise-do-its-accuracy-and-knowledge-justify-the-cost/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-28T21:52:48",
+          "summary": "The price of GPT-4.5 is very steep. But it doesn't mean that it's a failure (or that it will always be so expensive)."
+        },
+        {
+          "title": "Semantic understanding, not just vectors: How Intuit’s data architecture powers agentic AI with measurable ROI",
+          "url": "https://venturebeat.com/ai/semantic-understanding-not-just-vectors-how-intuits-data-architecture-powers-agentic-ai-with-measurable-roi/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-28T14:00:00",
+          "summary": "From automation to autonomy: How Intuit's 'done for you' agentic AI architecture drives concrete business outcomes."
+        },
+        {
+          "title": "Industry observers say GPT-4.5 is an “odd” model, question its price",
+          "url": "https://venturebeat.com/ai/industry-observers-say-gpt-4-5-is-an-odd-model-question-its-price/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-27T22:30:33",
+          "summary": "Industry leaders find GPT 4.5 an interesting mix of capable model without pushing the boundaries of LLMs too much."
+        },
+        {
+          "title": "OpenAI releases ‘largest, most knowledgable’ model GPT-4.5 with reduced hallucinations and high API price",
+          "url": "https://venturebeat.com/ai/openai-releases-gpt-4-5/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-27T20:25:28",
+          "summary": "GPT-4.5 API pricing appears shockingly high, costing developers $75 and $180 for 1 million tokens in and out, respectively."
+        },
+        {
+          "title": "PlayerUnknown Productions reveals trailer for  emergent open-world survival game",
+          "url": "https://venturebeat.com/games/playerunknown-productions-reveals-trailer-for-emergent-open-world-survival-game/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-27T19:00:00",
+          "summary": "PUBG creator Brendan Greene is back with a trailer for Prologue: Go Wayback, which will hit Steam early access this summer."
+        },
+        {
+          "title": "Qodo’s open code embedding model sets new enterprise standard, beating OpenAI, Salesforce",
+          "url": "https://venturebeat.com/programming-development/qodos-open-code-embedding-model-sets-new-enterprise-standard-beating-openai-salesforce/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-27T15:00:24",
+          "summary": "The 1.5B-parameter Qodo-Embed-1-1.5B is available on Hugging Face under the OpenRAIL++-M license, allowing developers to integrate it freely"
+        },
+        {
+          "title": "Ampere accelerates expansion into telecom networking processors",
+          "url": "https://venturebeat.com/games/ampere-accelerates-expansion-into-telecom-networking-processors/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-27T15:00:00",
+          "summary": "Ampere is accelerating its expansion from Arm-based server processors for AI processing into networking chips for the telecom market."
+        },
+        {
+          "title": "You.com unveils AI research agent that processes 400+ sources at once",
+          "url": "https://venturebeat.com/ai/you-com-unveils-ai-research-agent-that-processes-400-sources-at-once/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-27T11:00:00",
+          "summary": "You.com launches ARI, a cutting-edge AI research agent that processes over 400 sources in minutes, revolutionizing market research and empowering faster, more accurate business decision-making."
+        },
+        {
+          "title": "Microsoft’s new Phi-4 AI models pack big performance in small packages",
+          "url": "https://venturebeat.com/ai/microsofts-new-phi-4-ai-models-pack-big-performance-in-small-packages/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-27T03:15:48",
+          "summary": "Microsoft's new Phi-4 AI models deliver breakthrough performance in a compact size, processing text, images and speech simultaneously while requiring less computing power than competitors."
+        },
+        {
+          "title": "Rebuilding Alexa: How Amazon is mixing models, agents and browser-use for smarter AI",
+          "url": "https://venturebeat.com/ai/rebuilding-alexa-how-amazon-is-mixing-models-agents-and-browser-use-for-smarter-ai/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-26T23:53:58",
+          "summary": "In rearchitecting the upgraded Alexa voice assistant, Amazon turned to model mixing to bring agentic capabilities to devices."
+        },
+        {
+          "title": "Nvidia CEO: Someday we’ll have 1B robotic cars on the road",
+          "url": "https://venturebeat.com/games/nvidia-ceo-someday-well-have-1b-robotic-cars-on-the-road/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-26T23:02:00",
+          "summary": "Nvidia CEO Jensen Huang predicted that someday we'll have a billion cars on the road and they will all be robotic cars."
+        },
+        {
+          "title": "Hugging Face launches FastRTC to simplify real-time AI voice and video apps",
+          "url": "https://venturebeat.com/ai/hugging-face-launches-fastrtc-to-simplify-real-time-ai-voice-and-video-apps/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-26T22:27:12",
+          "summary": "Hugging Face's new FastRTC library enables Python developers to build real-time voice and video AI applications in just a few lines of code."
+        },
+        {
+          "title": "ElevenLabs’ new speech-to-text model Scribe is here with highest accuracy rate so far (96.7% for English)",
+          "url": "https://venturebeat.com/ai/elevenlabs-new-speech-to-text-model-scribe-is-here-with-highest-accuracy-rate-so-far-96-7-for-english/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-26T21:56:35",
+          "summary": "ElevenLab's Scribe pricing makes it competitive for businesses that require high-volume transcription services with API-based integration."
+        },
+        {
+          "title": "Nvidia revenues hit $39.3B, up 78% in FYQ4 — with no sign of slowdown (updated)",
+          "url": "https://venturebeat.com/games/nvidia-revenues-hit-35-1b-up-94-in-fyq3/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-26T21:31:00",
+          "summary": "Nvidia reported that its revenue for the third fiscal quarter ended October 27 was $35.1 billion, up 17% from the previous quarter and up 94% from a year ago."
+        },
+        {
+          "title": "OctoTools: Stanford’s open-source framework optimizes LLM reasoning through modular tool orchestration",
+          "url": "https://venturebeat.com/ai/octotools-stanfords-open-source-framework-optimizes-llm-reasoning-through-modular-tool-orchestration/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-26T18:01:13",
+          "summary": "OctoTools plans, executes, and verifies LLM tool use, surpassing competitors with its unique modular architecture."
+        },
+        {
+          "title": "Akool combines GenAI models with 2D avatars to create lifelike characters",
+          "url": "https://venturebeat.com/games/akool-enhances-content-creation-with-genai-models-to-create-lifelike-avatars/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-26T14:00:00",
+          "summary": "Akool, a startup doing AI-driven avatars, announced enhancements to Akool Streaming Avatars that connect avatars with AI models."
+        },
+        {
+          "title": "IBM Granite 3.2 uses conditional reasoning, time series forecasting and document vision to tackle challenging enterprise use cases",
+          "url": "https://venturebeat.com/ai/ibm-granite-3-2-uses-conditional-reasoning-time-series-forecasting-and-document-vision-to-tackle-challenging-enterprise-use-cases/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-26T14:00:00",
+          "summary": "IBM is bringing the power of conditional reasoning to its open source Granite 3.2 LLM, in an effort to solve real enterprise AI challenges."
+        },
+        {
+          "title": "Qualcomm and Nokia Bell Labs show how multiple-vendor AI models can work together in wireless networks",
+          "url": "https://venturebeat.com/games/qualcomm-and-nokia-bell-labs-show-how-multiple-vendor-ai-models-can-work-together-in-wireless-networks/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-26T14:00:00",
+          "summary": "Qualcomm and Nokia Bell Labs showed how multiple-vendor AI models can work together in an interoperable way in wireless networks."
+        },
+        {
+          "title": "John Gaeta’s Escape.ai creates platform for emerging entertainment",
+          "url": "https://venturebeat.com/games/john-gaetas-escape-ai-creates-platform-for-emerging-entertainment/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-26T13:30:00",
+          "summary": "Escape.ai debuted the beta of its Neo Cinema content distribution platform and creator marketplace to spur emerging forms of entertainment."
+        },
+        {
+          "title": "Hume launches new text-to-speech model Octave that generates custom AI voices with adjustable emotions",
+          "url": "https://venturebeat.com/ai/hume-launches-text-to-speech-model-octave/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-26T12:39:24",
+          "summary": "Hume emphasized its Octave TTS pricing is around half the cost of the competing offering from AI voice creation startup ElevenLabs."
+        },
+        {
+          "title": "OpenAI expands Deep Research access to Plus users, heating up AI agent wars with DeepSeek and Claude",
+          "url": "https://venturebeat.com/ai/openai-expands-deep-research-access-to-plus-users-heating-up-ai-agent-wars-with-deepseek-and-claude/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-25T23:53:56",
+          "summary": "OpenAI expands Deep Research AI agent to ChatGPT users, intensifying competition with DeepSeek and Anthropic."
+        },
+        {
+          "title": "How big U.S. bank BNY manages armies of AI agents",
+          "url": "https://venturebeat.com/ai/how-big-u-s-bank-bny-manages-armies-of-ai-agents/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-25T17:08:53",
+          "summary": "As investment bank BNY plans to upgrade its AI tool Eliza, it's looking forward to creating smart recommendation AI agents."
+        },
+        {
+          "title": "Google makes Gemini Code Assist free with 180,000 code completions per month as AI-powered dev race heats up",
+          "url": "https://venturebeat.com/programming-development/google-makes-gemini-code-assist-free/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-25T15:38:32",
+          "summary": "Google’s decision to provide a free version with significantly higher usage limits positions Gemini Code Assist as a compelling choice."
+        },
+        {
+          "title": "Adobe launches first Photoshop mobile app and it has amazing Firefly AI-powered object detection, editing, and effects",
+          "url": "https://venturebeat.com/ai/adobe-launches-first-photoshop-mobile-app-and-it-has-amazing-firefly-ai-powered-object-detection-editing-and-effects/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-25T14:18:10",
+          "summary": "Photoshop mobile includes Firefly-powered gen AI features like Generative Fill and Generative Expand and has mobile-adjusted touch targets."
+        },
+        {
+          "title": "Prompt AI’s Seemour launches visual intelligence platform for the home",
+          "url": "https://venturebeat.com/games/prompt-ais-seemour-launches-visual-intelligence-platform-for-the-home/",
+          "source": "VentureBeat AI",
+          "published_at": "2025-02-25T14:00:00",
+          "summary": "Prompt AI, a smart home and visual intelligence research and technology company, has launched Seemour, a visual intelligence platform."
+        }
+      ],
+      "papers": []
+    },
+    "created_at": "2025-03-03T16:53:41.676613"
   }
 ]

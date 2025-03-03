@@ -15,20 +15,31 @@
             <circle cx="5" cy="19" r="1"></circle>
           </svg>
         </a>
+        <div class="theme-toggle-container">
+          <ThemeToggle />
+        </div>
       </div>
       
-      <button class="menu-toggle" @click="toggleMenu" :class="{ 'active': isMenuOpen }">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="navbar-actions">
+        <ThemeToggle class="desktop-theme-toggle" />
+        <button class="menu-toggle" @click="toggleMenu" :class="{ 'active': isMenuOpen }">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </nav>
 </template>
 
 <script>
+import ThemeToggle from '@/components/ThemeToggle.vue'
+
 export default {
   name: 'Navbar',
+  components: {
+    ThemeToggle
+  },
   data() {
     return {
       isMenuOpen: false,
@@ -58,6 +69,12 @@ export default {
   z-index: 100;
   padding: 1rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.light-theme .navbar {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .navbar-container {
@@ -110,6 +127,7 @@ export default {
 .navbar-links {
   display: flex;
   gap: 1.5rem;
+  align-items: center;
 }
 
 .navbar-link {
@@ -159,6 +177,20 @@ export default {
 
 .rss-link:hover svg {
   transform: translateX(3px);
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.desktop-theme-toggle {
+  display: block;
+}
+
+.theme-toggle-container {
+  display: none;
 }
 
 .menu-toggle {
@@ -221,6 +253,15 @@ export default {
   .navbar-link {
     font-size: 1.2rem;
     margin: 1rem 0;
+  }
+  
+  .desktop-theme-toggle {
+    display: none;
+  }
+  
+  .theme-toggle-container {
+    display: block;
+    margin-top: 1rem;
   }
 }
 </style>

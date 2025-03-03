@@ -1,15 +1,53 @@
 :root {
-  --primary-color: #4f9eff;
-  --secondary-color: #00e980;
-  --accent-color: #a742ff;
-  --background-color: #121212;
-  --card-bg-color: #1e1e1e;
-  --text-color: #e0e0e0;
-  --text-secondary: #a0a0a0;
-  --border-color: #333333;
-  --shadow-color: rgba(0, 0, 0, 0.5);
+  /* 浅色主题变量 */
+  --primary-color-light: #3498db;
+  --secondary-color-light: #2ecc71;
+  --accent-color-light: #9b59b6;
+  --background-color-light: #f8f9fa;
+  --card-bg-color-light: #ffffff;
+  --text-color-light: #333333;
+  --text-secondary-light: #666666;
+  --border-color-light: #e0e0e0;
+  --shadow-color-light: rgba(0, 0, 0, 0.1);
+  
+  /* 深色主题变量 */
+  --primary-color-dark: #4f9eff;
+  --secondary-color-dark: #00e980;
+  --accent-color-dark: #a742ff;
+  --background-color-dark: #121212;
+  --card-bg-color-dark: #1e1e1e;
+  --text-color-dark: #e0e0e0;
+  --text-secondary-dark: #a0a0a0;
+  --border-color-dark: #333333;
+  --shadow-color-dark: rgba(0, 0, 0, 0.5);
+  
+  /* 默认使用深色主题 */
+  --primary-color: var(--primary-color-dark);
+  --secondary-color: var(--secondary-color-dark);
+  --accent-color: var(--accent-color-dark);
+  --background-color: var(--background-color-dark);
+  --card-bg-color: var(--card-bg-color-dark);
+  --text-color: var(--text-color-dark);
+  --text-secondary: var(--text-secondary-dark);
+  --border-color: var(--border-color-dark);
+  --shadow-color: var(--shadow-color-dark);
+  
   --transition-speed: 0.3s;
   --glow-color: rgba(79, 158, 255, 0.15);
+}
+
+/* 浅色主题类 */
+.light-theme {
+  --primary-color: var(--primary-color-light);
+  --secondary-color: var(--secondary-color-light);
+  --accent-color: var(--accent-color-light);
+  --background-color: var(--background-color-light);
+  --card-bg-color: var(--card-bg-color-light);
+  --text-color: var(--text-color-light);
+  --text-secondary: var(--text-secondary-light);
+  --border-color: var(--border-color-light);
+  --shadow-color: var(--shadow-color-light);
+  --glow-color: rgba(52, 152, 219, 0.15);
 }
 
 * {
@@ -23,6 +61,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {
@@ -64,10 +103,14 @@ button:hover {
   background-color: var(--card-bg-color);
   border-radius: 8px;
   box-shadow: 0 4px 12px var(--shadow-color);
-  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease, background-color 0.3s ease;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
+}
+
+.light-theme .card {
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .card:hover {
@@ -157,6 +200,11 @@ button:hover {
   animation: spin 1s ease-in-out infinite;
 }
 
+.light-theme .loading-spinner {
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-top-color: var(--primary-color);
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -173,13 +221,25 @@ button:hover {
   background: #1a1a1a;
 }
 
+.light-theme ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
 ::-webkit-scrollbar-thumb {
   background: #333;
   border-radius: 4px;
 }
 
+.light-theme ::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
 ::-webkit-scrollbar-thumb:hover {
   background: #444;
+}
+
+.light-theme ::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
 }
 
 /* 文本选择样式 */

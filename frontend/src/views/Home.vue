@@ -94,6 +94,13 @@ export default {
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.05);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.light-theme .hero-section {
+  background: linear-gradient(135deg, rgba(240, 240, 240, 0.8), rgba(255, 255, 255, 0.9));
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .hero-section::before {
@@ -105,6 +112,10 @@ export default {
   bottom: 0;
   background: radial-gradient(circle at center, rgba(79, 158, 255, 0.15), transparent 70%);
   opacity: 0.7;
+}
+
+.light-theme .hero-section::before {
+  background: radial-gradient(circle at center, rgba(52, 152, 219, 0.15), transparent 70%);
 }
 
 .hero-title {
@@ -119,6 +130,10 @@ export default {
   z-index: 2;
   text-shadow: 0 0 30px rgba(79, 158, 255, 0.5);
   letter-spacing: 1px;
+}
+
+.light-theme .hero-title {
+  text-shadow: 0 0 30px rgba(52, 152, 219, 0.5);
 }
 
 .hero-subtitle {
@@ -155,69 +170,75 @@ export default {
   background-color: var(--primary-color);
   top: 50%;
   transform: translateY(-50%);
-  box-shadow: 0 0 10px var(--primary-color);
 }
 
 .tech-circle::before {
   left: 0;
+  animation: pulse 2s infinite alternate;
 }
 
 .tech-circle::after {
   right: 0;
+  animation: pulse 2s infinite alternate-reverse;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50%) scale(1.5);
+    opacity: 0.5;
+  }
 }
 
 .reports-section {
-  margin-top: 3rem;
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .reports-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
-  margin-top: 2rem;
 }
 
 .report-item {
   height: 100%;
 }
 
-.loading-container {
+.loading-container, .empty-state {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding: 3rem 0;
+  min-height: 200px;
+  text-align: center;
 }
 
 .error-message {
   text-align: center;
-  padding: 3rem 0;
-  color: #e74c3c;
-  background: rgba(231, 76, 60, 0.1);
-  border-radius: 8px;
-  border: 1px solid rgba(231, 76, 60, 0.3);
+  color: #ff5252;
+  padding: 2rem;
 }
 
 .retry-button {
-  margin-top: 1.5rem;
-  background-color: #e74c3c;
-  padding: 0.7rem 2rem;
-  font-weight: 600;
-  border-radius: 30px;
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .retry-button:hover {
-  background-color: #c0392b;
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
-}
-
-.empty-state {
-  text-align: center;
-  padding: 3rem 0;
-  color: var(--text-secondary);
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
@@ -231,7 +252,6 @@ export default {
   
   .reports-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
   }
 }
 </style>

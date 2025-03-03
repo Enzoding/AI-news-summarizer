@@ -4,367 +4,567 @@
     <div v-if="loading" class="loading-container">
       <LoadingSpinner message="正在加载报告内容..." />
     </div>
-    
+
     <!-- 错误状态 -->
     <div v-else-if="error" class="error-container">
-      <p class="error-message">{{ error }}</p>
-      <div class="error-actions">
-        <button @click="fetchReport" class="btn">重试</button>
-        <router-link to="/" class="btn">返回首页</router-link>
-      </div>
+      <div class="error-message">{{ error }}</div>
+      <button @click="fetchReport" class="back-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M1 4v6h6"></path>
+          <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+        </svg>
+        重试
+      </button>
     </div>
-    
-    <!-- 报告内容 -->
-    <div v-else-if="report" class="report-content-container">
-      <!-- 返回链接 -->
-      <div class="back-link-container">
-        <router-link to="/" class="back-link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="19" y1="12" x2="5" y2="12"></line>
-            <polyline points="12 19 5 12 12 5"></polyline>
-          </svg>
-          返回
-        </router-link>
-      </div>
-      
-      <!-- 主要内容 -->
-      <div class="main-content">
-        <!-- 标题 -->
-        <div class="report-header">
+
+    <!-- 内容展示 -->
+    <div v-else-if="report" class="container">
+      <button @click="goBack" class="back-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5"></path>
+          <path d="M12 19l-7-7 7-7"></path>
+        </svg>
+        返回
+      </button>
+
+      <div class="report-content">
+        <div class="tech-decoration"></div>
+        
+        <header class="report-header">
           <h1 class="report-title">AI行业日报 {{ formatDate(report.date) }}</h1>
-        </div>
-        
-        <!-- 概述部分 -->
-        <div id="summary" class="content-section">
-          <h2 class="section-title">行业概述</h2>
-          <div class="markdown-content" v-html="renderMarkdown(report.summary)"></div>
-        </div>
-        
-        <!-- 新闻部分 -->
-        <div v-if="report.news && report.news.length > 0" id="news" class="content-section">
-          <h2 class="section-title">重要新闻</h2>
-          <div 
-            v-for="(item, index) in report.news" 
-            :key="index" 
-            :id="`news-${index}`"
-            class="content-item"
-          >
-            <h3 class="item-title">{{ item.title }}</h3>
-            <div class="markdown-content" v-html="renderMarkdown(item.summary)"></div>
-            <div class="item-meta">
-              <span class="item-source">{{ item.source }}</span>
-              <a v-if="item.url" :href="item.url" target="_blank" class="item-link">
-                原文链接
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
-              </a>
+          <div class="report-meta">
+            <div class="meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <span>{{ formatDate(report.date) }}</span>
+            </div>
+            <div v-if="report.created_at" class="meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+              </svg>
+              <span>生成于: {{ new Date(report.created_at).toLocaleString('zh-CN') }}</span>
             </div>
           </div>
-        </div>
-        
-        <!-- 论文部分 -->
-        <div v-if="report.papers && report.papers.length > 0" id="papers" class="content-section">
-          <h2 class="section-title">研究论文</h2>
-          <div 
-            v-for="(paper, index) in report.papers" 
-            :key="index" 
-            :id="`paper-${index}`"
-            class="content-item"
-          >
-            <h3 class="item-title">{{ paper.title }}</h3>
-            <p class="item-authors">{{ formatAuthors(paper.authors) }}</p>
-            <div class="markdown-content" v-html="renderMarkdown(paper.summary)"></div>
-            <div class="item-meta">
-              <span class="item-date">{{ formatDate(paper.published_date) }}</span>
-              <a v-if="paper.url" :href="paper.url" target="_blank" class="item-link">
-                论文链接
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
-              </a>
-            </div>
+        </header>
+
+        <!-- 摘要部分 -->
+        <section v-if="report.summary" class="section">
+          <h2 class="section-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            摘要
+          </h2>
+          <div class="content-text" v-html="report.summary"></div>
+        </section>
+
+        <!-- 主要内容部分 -->
+        <section v-if="report.content" class="section">
+          <h2 class="section-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            详细内容
+          </h2>
+          <div class="content-text" v-html="report.content"></div>
+        </section>
+
+        <!-- 关键点部分 -->
+        <section v-if="report.key_points && report.key_points.length" class="section">
+          <h2 class="section-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 11 12 14 22 4"></polyline>
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+            </svg>
+            关键点
+          </h2>
+          <div class="section-content">
+            <ul>
+              <li v-for="(point, index) in report.key_points" :key="index" v-html="point"></li>
+            </ul>
           </div>
-        </div>
+        </section>
+
+        <!-- 相关链接部分 -->
+        <section v-if="report.links && report.links.length" class="section">
+          <h2 class="section-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+            </svg>
+            相关链接
+          </h2>
+          <div class="section-content">
+            <ul>
+              <li v-for="(link, index) in report.links" :key="index">
+                <a :href="link.url" target="_blank" rel="noopener noreferrer">{{ link.title || link.url }}</a>
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
     </div>
-    
+
     <!-- 空状态 -->
-    <div v-else class="empty-container">
-      <p>未找到报告数据</p>
-      <router-link to="/" class="btn">返回首页</router-link>
+    <div v-else class="error-container">
+      <div class="error-message">未找到报告内容</div>
+      <button @click="goBack" class="back-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5"></path>
+          <path d="M12 19l-7-7 7-7"></path>
+        </svg>
+        返回
+      </button>
     </div>
   </div>
 </template>
 
 <script>
-import axios from 'axios'
 import LoadingSpinner from '@/components/LoadingSpinner.vue'
+import { ref, onMounted } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 import { marked } from 'marked'
+
+// 配置 marked 选项
+marked.setOptions({
+  breaks: true,  // 允许换行符转换为 <br>
+  gfm: true,     // 启用 GitHub 风格的 Markdown
+  headerIds: true, // 为标题生成 ID
+  mangle: false,   // 不转义标题文本
+  sanitize: false, // 不清理 HTML 标签
+  smartLists: true, // 使用更智能的列表行为
+  smartypants: true, // 使用更智能的标点符号
+  xhtml: false      // 不使用 XHTML 自闭合标签
+})
 
 export default {
   name: 'ReportDetail',
   components: {
     LoadingSpinner
   },
-  data() {
-    return {
-      report: null,
-      loading: true,
-      error: null
-    }
-  },
-  computed: {
-    reportDate() {
-      return this.$route.params.date
-    }
-  },
-  watch: {
-    reportDate() {
-      this.fetchReport()
-    }
-  },
-  mounted() {
-    this.fetchReport()
-  },
-  methods: {
-    async fetchReport() {
-      this.loading = true
-      this.error = null
+  setup() {
+    const route = useRoute()
+    const router = useRouter()
+    const report = ref(null)
+    const loading = ref(true)
+    const error = ref(null)
+
+    const fetchReport = async () => {
+      loading.value = true
+      error.value = null
       
       try {
-        const response = await axios.get(`/api/reports/${this.reportDate}`)
+        // 确保路由参数存在
+        if (!route.params.date || route.params.date === 'undefined') {
+          throw new Error('无效的报告日期')
+        }
         
-        if (response.data.success) {
-          this.report = response.data.data
+        const response = await fetch(`/api/reports/${route.params.date}`)
+        
+        if (!response.ok) {
+          throw new Error(`获取报告失败: ${response.statusText}`)
+        }
+        
+        const data = await response.json()
+        if (data.success && data.data) {
+          report.value = data.data
+          
+          // 将 Markdown 内容转换为 HTML
+          if (report.value.summary) {
+            report.value.summary = marked(report.value.summary)
+          }
+          
+          // 处理其他可能包含 Markdown 的字段
+          if (report.value.content) {
+            report.value.content = marked(report.value.content)
+          }
+          
+          // 处理关键点列表（如果是 Markdown 格式）
+          if (report.value.key_points && Array.isArray(report.value.key_points)) {
+            report.value.key_points = report.value.key_points.map(point => {
+              return typeof point === 'string' ? marked(point) : point
+            })
+          }
         } else {
-          this.error = '获取报告数据失败'
+          throw new Error('获取报告数据失败')
         }
       } catch (err) {
-        console.error('获取报告失败:', err)
-        this.error = '网络错误，请稍后重试'
+        console.error('Error fetching report:', err)
+        error.value = `获取报告失败: ${err.message}`
       } finally {
-        this.loading = false
+        loading.value = false
       }
-    },
-    formatDate(dateString) {
+    }
+
+    const goBack = () => {
+      router.back()
+    }
+
+    const formatDate = (dateString) => {
       if (!dateString) return ''
+      
       const date = new Date(dateString)
       return date.toLocaleDateString('zh-CN', {
         year: 'numeric',
         month: 'long',
         day: 'numeric'
       })
-    },
-    formatAuthors(authors) {
-      if (!authors) return ''
-      if (typeof authors === 'string') return authors
-      return authors.join(', ')
-    },
-    renderMarkdown(content) {
-      if (!content) return ''
-      return marked(content)
+    }
+
+    onMounted(() => {
+      fetchReport()
+    })
+
+    return {
+      report,
+      loading,
+      error,
+      fetchReport,
+      goBack,
+      formatDate
     }
   }
 }
 </script>
 
 <style scoped>
-/* 基础布局 */
 .report-detail-container {
-  min-height: 100vh;
-  position: relative;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem 1rem;
+  color: var(--text-color);
 }
 
-/* 加载和错误状态 */
-.loading-container,
-.error-container,
-.empty-container {
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  margin-bottom: 2rem;
+}
+
+.back-button:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.back-button svg {
+  margin-right: 0.5rem;
+}
+
+.loading-container, .error-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 60vh;
-  padding: 2rem;
+  min-height: 50vh;
   text-align: center;
 }
 
 .error-message {
-  color: #e53e3e;
-  margin-bottom: 1rem;
+  color: var(--error-color);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
-.error-actions {
-  display: flex;
-  gap: 1rem;
+.report-content {
+  background-color: var(--card-bg-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
 }
 
-/* 按钮样式 */
-.btn {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: #4299e1;
-  color: white;
-  border-radius: 0.25rem;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.2s;
-}
-
-.btn:hover {
-  background-color: #3182ce;
-}
-
-/* 返回链接 */
-.back-link-container {
-  margin-bottom: 1rem;
-  padding: 0.5rem 0;
-}
-
-.back-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #4a5568;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.back-link:hover {
-  color: #4299e1;
-}
-
-/* 主要内容布局 */
-.report-content-container {
-  display: flex;
-  flex-direction: column;
-}
-
-/* 主内容区 */
-.main-content {
-  padding: 1rem 0;
+.tech-decoration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(135deg, var(--primary-color-light) 0%, transparent 70%);
+  opacity: 0.3;
+  border-radius: 0 0 0 100%;
+  z-index: 0;
 }
 
 .report-header {
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .report-title {
   font-size: 2rem;
-  font-weight: 700;
-  color: #2d3748;
-  margin: 0;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
 }
 
-/* 内容部分 */
-.content-section {
-  margin-bottom: 3rem;
+.report-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--text-color-light);
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+}
+
+.meta-item svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 .section-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #2d3748;
-  margin: 0 0 1.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid #4299e1;
-}
-
-.content-item {
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #e2e8f0;
-}
-
-.content-item:last-child {
-  border-bottom: none;
-}
-
-.item-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #2d3748;
-  margin: 0 0 0.75rem;
-}
-
-.item-authors {
-  font-size: 0.875rem;
-  color: #718096;
-  font-style: italic;
-  margin: 0 0 0.75rem;
-}
-
-.item-meta {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
-  font-size: 0.875rem;
-  color: #718096;
-}
-
-.item-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-  color: #4299e1;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.item-link:hover {
-  color: #3182ce;
-}
-
-/* Markdown 内容样式 */
-.markdown-content {
-  line-height: 1.7;
-  color: #4a5568;
-}
-
-.markdown-content :deep(h2) {
   font-size: 1.5rem;
-  font-weight: 600;
-  color: #2d3748;
-  margin: 1.5rem 0 0.75rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
 }
 
-.markdown-content :deep(h3) {
+.section-title svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+}
+
+.content-text, .section-content {
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* Markdown 样式 */
+:deep(.content-text), :deep(.section-content) {
+  /* 标题样式 */
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--heading-color);
+  }
+  
+  /* 统一标题字体大小 */
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.4rem; }
+  h4 { font-size: 1.2rem; }
+  h5 { font-size: 1.1rem; }
+  h6 { font-size: 1rem; }
+  
+  /* 段落样式 */
+  p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* 列表样式 */
+  ul, ol {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* 链接样式 */
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: var(--primary-color-dark);
+  }
+  
+  /* 引用样式 */
+  blockquote {
+    border-left: 4px solid var(--primary-color-light);
+    padding-left: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-style: italic;
+    color: var(--text-color-light);
+  }
+  
+  /* 代码样式 */
+  code {
+    background-color: var(--code-bg-color);
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 0.9em;
+  }
+  
+  pre {
+    background-color: var(--code-bg-color);
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+  }
+  
+  pre code {
+    background-color: transparent;
+    padding: 0;
+  }
+  
+  /* 表格样式 */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+  }
+  
+  th, td {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+  }
+  
+  th {
+    background-color: var(--table-header-bg);
+    font-weight: 600;
+  }
+  
+  /* 水平线样式 */
+  hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 2rem 0;
+  }
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.news-item {
+  background-color: var(--card-bg-color-light);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.news-link {
+  display: block;
+  padding: 1.25rem;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.news-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+  color: var(--heading-color);
+}
+
+.news-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--text-color-light);
+}
+
+.papers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.paper-item {
+  background-color: var(--card-bg-color-light);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.paper-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.paper-link {
+  display: block;
+  padding: 1.5rem;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.paper-title {
   font-size: 1.25rem;
-  font-weight: 600;
-  color: #2d3748;
-  margin: 1.25rem 0 0.75rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+  color: var(--heading-color);
 }
 
-.markdown-content :deep(h4) {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #2d3748;
-  margin: 1rem 0 0.75rem;
-}
-
-.markdown-content :deep(p) {
-  margin: 0 0 1rem;
-}
-
-.markdown-content :deep(strong) {
-  font-weight: 600;
-  color: #2d3748;
-}
-
-.markdown-content :deep(em) {
+.paper-authors {
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-color-light);
   font-style: italic;
-  color: #4a5568;
 }
 
-/* 响应式设计 */
+.paper-summary {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.paper-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-color-light);
+}
+
 @media (max-width: 768px) {
   .report-title {
     font-size: 1.5rem;
@@ -372,6 +572,14 @@ export default {
   
   .section-title {
     font-size: 1.25rem;
+  }
+  
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .report-content {
+    padding: 1.5rem;
   }
 }
 </style>

@@ -10,7 +10,7 @@ import logging
 # 导入自定义模块
 from collectors.news_collector import collect_hackernews, collect_venturebeat
 from collectors.paper_collector import collect_arxiv_papers
-from models.deepseek_model import generate_summary
+from models.model_manager import generate_summary
 
 # 配置日志
 logging.basicConfig(level=logging.INFO, 

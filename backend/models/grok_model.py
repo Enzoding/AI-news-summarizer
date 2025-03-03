@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 
 def generate_summary(data):
     """
-    使用DeepSeek模型生成总结
+    使用Grok模型生成总结
     
     Args:
         data: 包含新闻和论文的数据字典
@@ -19,13 +19,13 @@ def generate_summary(data):
     Returns:
         生成的总结文本
     """
-    logger.info("开始使用DeepSeek生成总结")
+    logger.info("开始使用Grok生成总结")
     
     try:
         # 获取API密钥
-        api_key = os.getenv("DEEPSEEK_API_KEY")
+        api_key = os.getenv("GROK_API_KEY")
         if not api_key:
-            logger.error("未找到DeepSeek API密钥")
+            logger.error("未找到Grok API密钥")
             return "无法生成总结：未配置API密钥"
         
         # 准备提示词
@@ -60,11 +60,11 @@ def generate_summary(data):
 
 请确保内容客观、专业，并保持格式清晰。"""
 
-        # 调用DeepSeek API
-        url = "https://api.siliconflow.cn/v1/chat/completions"
+        # 调用Grok API
+        url = "https://api.x.ai/v1/chat/completions"
         
         payload = {
-            "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+            "model": "grok-2-1212",
             "messages": [
                 {
                     "role": "user",
@@ -73,13 +73,8 @@ def generate_summary(data):
             ],
             "stream": False,
             "max_tokens": 2048,
-            "stop": None,
             "temperature": 0.7,
-            "top_p": 0.7,
-            "top_k": 50,
-            "frequency_penalty": 0.5,
-            "n": 1,
-            "response_format": {"type": "text"}
+            "top_p": 0.7
         }
         
         headers = {
@@ -92,30 +87,12 @@ def generate_summary(data):
         if response.status_code == 200:
             result = response.json()
             summary = result.get('choices', [{}])[0].get('message', {}).get('content', '')
-            logger.info("DeepSeek总结生成成功")
+            logger.info("Grok总结生成成功")
             return summary
         else:
-            logger.error(f"DeepSeek API调用失败: {response.status_code} - {response.text}")
+            logger.error(f"Grok API调用失败: {response.status_code} - {response.text}")
             return f"生成总结失败: API返回错误 {response.status_code}"
     
     except Exception as e:
-        logger.error(f"生成总结时发生错误: {e}")
+        logger.error(f"Grok总结生成失败: {e}")
         return f"生成总结失败: {str(e)}"
-
-# 支持其他模型的扩展接口
-def generate_summary_with_model(data, model_name):
-    """
-    使用指定模型生成总结的扩展接口
-    
-    Args:
-        data: 包含新闻和论文的数据字典
-        model_name: 模型名称
-        
-    Returns:
-        生成的总结文本
-    """
-    if model_name.lower() == 'deepseek':
-        return generate_summary(data)
-    else:
-        logger.error(f"不支持的模型: {model_name}")
-        return f"不支持的模型: {model_name}"
