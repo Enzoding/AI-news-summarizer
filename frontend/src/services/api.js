@@ -1,8 +1,19 @@
 import axios from 'axios'
 
+// 获取 API 基础 URL
+const getBaseUrl = () => {
+  // 如果是 Vercel 环境，使用相对路径
+  if (process.env.VERCEL) {
+    return ''
+  }
+  
+  // 本地开发环境，使用本地后端 API
+  return process.env.VUE_APP_API_BASE_URL || 'http://localhost:5000'
+}
+
 // 创建axios实例
 const apiClient = axios.create({
-  baseURL: '/',
+  baseURL: getBaseUrl(),
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',
@@ -54,6 +65,7 @@ export default {
   
   // 获取RSS订阅链接
   getRssUrl() {
-    return '/rss'
+    const baseUrl = getBaseUrl()
+    return `${baseUrl}/rss`
   }
 }

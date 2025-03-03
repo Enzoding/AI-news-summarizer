@@ -12,6 +12,23 @@ from collectors.news_collector import collect_hackernews, collect_venturebeat
 from collectors.paper_collector import collect_arxiv_papers
 from models.model_manager import generate_summary
 
+# 导入 Supabase 客户端
+try:
+    from db.supabase_client import (
+        get_reports as supabase_get_reports,
+        get_report_by_date as supabase_get_report_by_date,
+        create_report as supabase_create_report,
+        update_report as supabase_update_report,
+        get_sources as supabase_get_sources,
+        init_supabase
+    )
+    # 初始化 Supabase 客户端
+    supabase = init_supabase()
+    USE_SUPABASE = supabase is not None
+except ImportError as e:
+    logging.warning(f"无法导入 Supabase 客户端: {e}")
+    USE_SUPABASE = False
+
 # 配置日志
 logging.basicConfig(level=logging.INFO, 
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -79,6 +96,14 @@ def get_reports():
     """获取所有报告"""
     try:
         limit = int(request.args.get('limit', 10))
+        
+        if USE_SUPABASE:
+            # 使用 Supabase 获取报告
+            response = supabase_get_reports(limit)
+            if response:
+                return jsonify({"success": True, "data": response})
+        
+        # 回退到本地文件存储
         reports = read_reports()
         # 按日期排序
         reports.sort(key=lambda x: x.get('date', ''), reverse=True)
@@ -91,6 +116,13 @@ def get_reports():
 def get_report_by_date(date):
     """获取指定日期的报告"""
     try:
+        if USE_SUPABASE:
+            # 使用 Supabase 获取报告
+            report = supabase_get_report_by_date(date)
+            if report:
+                return jsonify({"success": True, "data": report})
+        
+        # 回退到本地文件存储
         reports = read_reports()
         report = next((r for r in reports if r.get('date') == date), None)
         if report:
@@ -105,6 +137,13 @@ def get_report_by_date(date):
 def get_latest_report():
     """获取最新报告"""
     try:
+        if USE_SUPABASE:
+            # 使用 Supabase 获取最新报告
+            reports = supabase_get_reports(1)
+            if reports and len(reports) > 0:
+                return jsonify({"success": True, "data": reports[0]})
+        
+        # 回退到本地文件存储
         reports = read_reports()
         if not reports:
             return jsonify({"success": False, "error": "没有报告"}), 404
@@ -120,6 +159,13 @@ def get_latest_report():
 def get_sources():
     """获取所有信息源"""
     try:
+        if USE_SUPABASE:
+            # 使用 Supabase 获取信息源
+            sources = supabase_get_sources()
+            if sources:
+                return jsonify({"success": True, "data": sources})
+        
+        # 回退到本地文件存储
         sources = read_sources()
         return jsonify({"success": True, "data": sources})
     except Exception as e:
@@ -143,8 +189,14 @@ def get_rss():
     import datetime
     
     try:
-        reports = read_reports()
-        reports.sort(key=lambda x: x.get('date', ''), reverse=True)
+        if USE_SUPABASE:
+            # 使用 Supabase 获取报告
+            reports = supabase_get_reports(10)
+        else:
+            # 回退到本地文件存储
+            reports = read_reports()
+            reports.sort(key=lambda x: x.get('date', ''), reverse=True)
+            reports = reports[:10]  # 只取最新的10条
         
         fg = FeedGenerator()
         fg.title('AI行业信息收集总结助手')
@@ -152,7 +204,7 @@ def get_rss():
         fg.link(href=request.host_url)
         fg.language('zh-CN')
         
-        for report in reports[:10]:  # 只取最新的10条
+        for report in reports:
             fe = fg.add_entry()
             fe.title(f"AI行业日报 {report['date']}")
             fe.description(report['summary'])
@@ -170,9 +222,15 @@ def get_rss():
 def health_check():
     """健康检查接口"""
     try:
-        # 检查数据文件是否可读
-        reports = read_reports()
-        sources = read_sources()
+        # 检查数据是否可读
+        if USE_SUPABASE:
+            reports = supabase_get_reports(1)
+            sources = supabase_get_sources()
+            db_status = "supabase"
+        else:
+            reports = read_reports()
+            sources = read_sources()
+            db_status = "local"
         
         # 返回健康状态和基本信息
         return jsonify({
@@ -181,6 +239,7 @@ def health_check():
             "version": "1.0.0",
             "reports_count": len(reports),
             "sources_count": len(sources),
+            "db_status": db_status,
             "timestamp": datetime.now().isoformat()
         })
     except Exception as e:
@@ -215,7 +274,7 @@ def generate_daily_report():
         # 使用大语言模型生成总结
         summary, model_name = generate_summary(prompt_data)
         
-        # 保存报告到本地文件
+        # 创建报告
         report = {
             "date": today,
             "summary": summary,
@@ -224,24 +283,39 @@ def generate_daily_report():
                 "papers": papers_data
             },
             "created_at": datetime.now().isoformat(),
-            "model": model_name  # 添加模型信息
+            "model": model_name
         }
         
-        reports = read_reports()
+        success = False
         
-        # 检查是否已存在同日期的报告
-        existing_report_index = next((i for i, r in enumerate(reports) if r.get('date') == today), None)
-        if existing_report_index is not None:
-            # 更新已存在的报告
-            reports[existing_report_index] = report
-        else:
-            # 添加新报告
-            reports.append(report)
+        if USE_SUPABASE:
+            # 检查是否已存在同日期的报告
+            existing_report = supabase_get_report_by_date(today)
+            if existing_report:
+                # 更新已存在的报告
+                success = supabase_update_report(today, report)
+            else:
+                # 添加新报告
+                success = supabase_create_report(report)
         
-        write_reports(reports)
+        # 如果 Supabase 操作失败或未启用，回退到本地文件存储
+        if not success:
+            reports = read_reports()
+            
+            # 检查是否已存在同日期的报告
+            existing_report_index = next((i for i, r in enumerate(reports) if r.get('date') == today), None)
+            if existing_report_index is not None:
+                # 更新已存在的报告
+                reports[existing_report_index] = report
+            else:
+                # 添加新报告
+                reports.append(report)
+            
+            write_reports(reports)
+            success = True
+        
         logger.info(f"报告生成成功: {today}，使用模型: {model_name}")
-        
-        return True
+        return success
     except Exception as e:
         logger.error(f"报告生成失败: {e}")
         return False
@@ -277,7 +351,14 @@ def init_sources():
         }
     ]
     
-    write_sources(sources)
+    # 尝试使用 Supabase 初始化信息源
+    if USE_SUPABASE:
+        from scripts.migrate_data import migrate_sources
+        migrate_sources(sources)
+    else:
+        # 回退到本地文件存储
+        write_sources(sources)
+    
     logger.info("信息源初始化完成")
 
 if __name__ == '__main__':
@@ -288,5 +369,5 @@ if __name__ == '__main__':
     init_scheduler()
     
     # 启动Flask应用
-    port = 5002
+    port = int(os.environ.get('PORT', 5002))
     app.run(host='0.0.0.0', port=port, debug=True)
