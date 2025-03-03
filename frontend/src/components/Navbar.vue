@@ -17,7 +17,7 @@
         </a>
       </div>
       
-      <button class="menu-toggle" @click="toggleMenu">
+      <button class="menu-toggle" @click="toggleMenu" :class="{ 'active': isMenuOpen }">
         <span></span>
         <span></span>
         <span></span>
@@ -50,13 +50,14 @@ export default {
 
 <style scoped>
 .navbar {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(18, 18, 18, 0.8);
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 10px var(--shadow-color);
   position: sticky;
   top: 0;
   z-index: 100;
   padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .navbar-container {
@@ -71,7 +72,9 @@ export default {
   color: var(--text-color);
   font-weight: 700;
   font-size: 1.5rem;
-  transition: transform var(--transition-speed) ease;
+  transition: all var(--transition-speed) ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .navbar-logo:hover {
@@ -84,6 +87,24 @@ export default {
   background-clip: text;
   color: transparent;
   font-weight: 800;
+  position: relative;
+}
+
+.logo-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.navbar-logo:hover .logo-text::after {
+  transform: scaleX(1);
 }
 
 .navbar-links {
@@ -156,10 +177,22 @@ export default {
 .menu-toggle span {
   display: block;
   width: 100%;
-  height: 3px;
+  height: 2px;
   background-color: var(--text-color);
   border-radius: 3px;
   transition: all 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
 }
 
 @media (max-width: 768px) {
@@ -173,7 +206,7 @@ export default {
     right: -100%;
     width: 70%;
     height: 100vh;
-    background-color: white;
+    background-color: var(--card-bg-color);
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -188,18 +221,6 @@ export default {
   .navbar-link {
     font-size: 1.2rem;
     margin: 1rem 0;
-  }
-  
-  .menu-toggle.active span:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-  }
-  
-  .menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .menu-toggle.active span:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
   }
 }
 </style>
