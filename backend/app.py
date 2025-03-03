@@ -213,7 +213,7 @@ def generate_daily_report():
         }
         
         # 使用大语言模型生成总结
-        summary = generate_summary(prompt_data)
+        summary, model_name = generate_summary(prompt_data)
         
         # 保存报告到本地文件
         report = {
@@ -223,7 +223,8 @@ def generate_daily_report():
                 "news": news_data,
                 "papers": papers_data
             },
-            "created_at": datetime.now().isoformat()
+            "created_at": datetime.now().isoformat(),
+            "model": model_name  # 添加模型信息
         }
         
         reports = read_reports()
@@ -238,7 +239,7 @@ def generate_daily_report():
             reports.append(report)
         
         write_reports(reports)
-        logger.info(f"报告生成成功: {today}")
+        logger.info(f"报告生成成功: {today}，使用模型: {model_name}")
         
         return True
     except Exception as e:

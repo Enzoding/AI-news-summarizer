@@ -671,64 +671,64 @@
   },
   {
     "date": "2025-03-03",
-    "summary": "### AI行业日报\n日期: 2025-03-03\n\n#### 1. 行业概述\n今天的AI行业呈现出多样化的发展动态和趋势。主要亮点包括新型内存芯片的发布、AI模型的性能提升以及企业级AI应用的创新。此外，AI在各个领域的应用继续扩大，从智能家居到金融服务，再到娱乐和通信行业。同时，学术界也在不断推进AI技术的理论研究和应用创新。\n\n#### 2. 重要新闻\n\n**新闻1: Micron launches new memory chips to keep up with AI processing**\nMicron推出了其首批1y (1-gamma) DDR5内存芯片样品，旨在满足AI处理的需求。这标志着内存技术的重大进步，有助于提升AI系统的性能和效率。随着AI应用的不断增长，对高性能内存的需求也在增加，Micron的这一举措有望在市场上占据重要地位。\n\n**新闻2: 2025 has already brought us the most performant AI ever: What can we do with these supercharged capabilities (and what’s next)?**\n2025年见证了AI性能的显著提升，从OpenAI的'Deep Research'到DeepMind的'AI co-scientist'，这些进展展示了AI在智能和能力方面的巨大潜力。未来，AI有望在科学研究、医疗、金融等领域发挥更大的作用，推动创新和效率的提升。\n\n**新闻3: OpenAI releases ‘largest, most knowledgable’ model GPT-4.5 with reduced hallucinations and high API price**\nOpenAI发布了GPT-4.5模型，声称其是迄今为止最大、最具知识性的模型。尽管其API价格高昂，但其减少的幻觉（hallucinations）问题和增强的准确性使其在企业应用中具有吸引力。这表明AI模型的商业化进程正在加速，但成本效益仍需进一步评估。\n\n**新闻4: Google makes Gemini Code Assist free with 180,000 code completions per month as AI-powered dev race heats up**\nGoogle宣布Gemini Code Assist免费提供，每月可完成180,000次代码补全。这不仅加剧了AI驱动的开发工具竞争，也为开发者提供了更强大的支持，有助于提高开发效率和代码质量。\n\n**新闻5: Adobe launches first Photoshop mobile app and it has amazing Firefly AI-powered object detection, editing, and effects**\nAdobe推出了首个Photoshop移动应用，配备了Firefly AI驱动的对象检测、编辑和效果功能。这标志着AI在创意软件中的应用进一步深化，为用户提供了更便捷和强大的编辑工具。\n\n#### 3. 学术进展\n\n**论文1: Artificial Intelligence and the Labor Market [pdf]**\n这篇论文探讨了AI对劳动市场的影响，指出AI技术的广泛应用可能导致某些工作岗位的自动化，但同时也创造了新的就业机会。论文强调了劳动力市场需要适应AI技术的快速发展，提出了一些政策建议以应对这一挑战。\n\n**论文2: A mechanically verified garbage collector for OCaml [pdf]**\n该论文介绍了一种为OCaml语言设计的机械验证垃圾回收器，展示了在编程语言和系统软件中应用形式验证的创新方法。通过机械验证，提高了垃圾回收器的可靠性和安全性，为未来软件开发提供了新的思路。\n\n**论文3: OctoTools: Stanford’s open-source framework optimizes LLM reasoning through modular tool orchestration**\nOctoTools是一个由斯坦福大学开发的开源框架，通过模块化工具编排优化大语言模型（LLM）的推理过程。该框架的创新之处在于其灵活性和可扩展性，能够有效地提升LLM在各种应用场景中的表现。\n\n#### 4. 趋势洞察\n\n基于今天的资讯和学术进展，可以看出AI行业的发展趋势和机会主要集中在以下几个方面：\n\n- **硬件技术的进步**：如Micron的新型内存芯片，推动了AI系统性能的提升，为AI应用提供了更强大的硬件支持。\n- **AI模型的性能优化**：GPT-4.5和Phi-4等新模型的发布，展示了AI在准确性和能力方面的持续进步，推动了AI在企业和消费者市场的应用。\n- **AI在特定领域的深化应用**：从Adobe的Photoshop移动应用到Prompt AI的智能家居平台，AI技术在创意软件、智能家居等领域的应用不断深化，提供了更多创新和便利的解决方案。\n- **劳动市场的适应和转型**：AI对劳动市场的影响日益显著，企业和政策制定者需要采取措施，帮助劳动力市场适应这一变化，创造新的就业机会。\n- **开源和协作创新**：如OctoTools等开源框架的出现，促进了AI技术的共享和协作创新，为开发者和研究人员提供了更多的工具和资源。\n\n总体而言，AI行业在2025年继续保持高速发展，技术创新和应用扩展为各行业带来了新的机遇和挑战。",
+    "summary": "### AI行业日报\n日期: 2025-03-03\n\n#### 1. 行业概述\n今日AI行业呈现出多样化的发展动态和趋势。首先，安全和隐私问题继续成为关注焦点，中国AI领导者被建议避免前往美国旅行，以应对安全担忧。其次，硬件技术的进步也在推动AI的发展，Micron发布了新的内存芯片以满足AI处理需求。此外，AI模型的性能不断提升，2025年已见证了迄今为止最具表现力的AI模型，这为各种应用场景带来了新的可能性。学术界也在积极探索AI的多种应用，从医学成像到自然语言处理，展示了AI在不同领域的潜力。\n\n#### 2. 重要新闻\n\n**新闻1: 中国告诉其AI领导者避免前往美国旅行以应对安全担忧**\n链接: https://www.wsj.com/world/china/china-ai-us-travel-advisory-ff248349\n影响: 此举反映了中美之间在AI领域的紧张关系，可能影响两国AI研究人员和企业家的交流与合作。长期来看，这可能会导致AI技术发展的分化，促使中国加速发展本土AI技术，同时也可能影响全球AI技术的共享和进步。\n\n**新闻2: Micron发布新的内存芯片以满足AI处理需求**\n链接: https://venturebeat.com/games/micron-launches-new-memory-chips-to-keep-up-with-ai-processing/\n影响: Micron的新内存芯片旨在提高AI处理能力，这对AI应用的性能提升至关重要。随着AI模型规模和复杂性的增加，对高效内存的需求也在增长，Micron的创新有助于推动AI在计算密集型任务中的应用，如大规模数据处理和实时分析。\n\n**新闻3: 2025年已见证了迄今为止最具表现力的AI模型**\n链接: https://venturebeat.com/ai/2025-has-already-brought-us-the-most-performant-ai-ever-what-can-we-do-with-these-supercharged-capabilities-and-whats-next/\n影响: 这些超级AI模型的出现为各种领域带来了新的可能性，从科学研究到商业应用。它们能够处理更复杂的任务，提供更准确的预测和决策支持。然而，这也带来了新的挑战，如如何有效利用这些能力，以及如何确保这些模型的安全性和伦理使用。\n\n**新闻4: 关于如何在数亿人及流行应用中获得代码执行的讨论**\n链接: https://kibty.town/blog/todesktop/\n影响: 此新闻揭示了AI和软件安全之间的紧密联系。随着AI在软件开发中的应用增加，确保AI生成的代码安全性变得至关重要。这不仅影响到软件开发的效率和质量，也关系到用户数据的安全和隐私。\n\n#### 3. 学术进展\n\n**论文1: LLM Post-Training: A Deep Dive into Reasoning Large Language Models**\n链接: http://arxiv.org/abs/2502.21321v1\n创新点: 该论文深入探讨了大型语言模型（LLMs）在推理方面的后训练技术，强调了预训练在提升模型性能中的重要性。通过对LLMs进行后训练，可以显著提高其在复杂推理任务中的表现，这对于自然语言处理应用具有重要意义。\n\n**论文2: TomoSelfDEQ: Self-Supervised Deep Equilibrium Learning for Sparse-Angle CT Reconstruction**\n链接: http://arxiv.org/abs/2502.21320v1\n创新点: 该研究提出了一种自监督的深度平衡学习方法，用于稀疏角度CT重建。这项工作展示了深度学习在医学成像中的潜力，特别是在数据有限的情况下，通过自监督学习提高图像重建的质量。\n\n**论文3: How far can we go with ImageNet for Text-to-Image generation?**\n链接: http://arxiv.org/abs/2502.21318v1\n创新点: 该论文探讨了使用ImageNet数据集进行文本到图像生成的极限，挑战了“大数据即更好”的传统观念。研究表明，通过优化数据质量而非数量，可以在文本到图像生成任务中取得显著进展，这为未来研究提供了新的方向。\n\n#### 4. 趋势洞察\n\n基于今日的新闻和学术进展，AI行业的发展趋势和机会可以归纳如下：\n\n- **安全与隐私**：随着AI技术的广泛应用，安全和隐私问题变得越来越重要。企业和研究机构需要加强对AI模型的安全性评估和隐私保护措施，以应对潜在的风险。\n\n- **硬件创新**：AI性能的提升离不开硬件技术的支持。Micron的新内存芯片等创新将继续推动AI在计算密集型任务中的应用，企业应关注硬件技术的发展并积极采用新技术。\n\n- **模型性能**：2025年见证了AI模型性能的显著提升，这为各种应用场景带来了新的可能性。企业应探索如何利用这些超级AI模型来提升业务效率和创新能力。\n\n- **学术研究**：学术界在AI应用方面的研究不断推进，从医学成像到自然语言处理，展示了AI的多样化应用潜力。企业应与学术机构合作，共同推动AI技术的进步和应用。\n\n**建议**：\n- 企业应加强AI安全和隐私保护措施，确保AI技术的可靠性和用户信任。\n- 关注并投资于硬件技术创新，以支持AI模型的性能提升和应用扩展。\n- 积极探索超级AI模型的应用场景，寻找新的业务增长点。\n- 与学术机构合作，利用最新的研究成果推动AI技术的创新和应用。",
     "raw_data": {
       "news": [
         {
-          "title": "Man's brain turned to glass by hot Vesuvius ash cloud",
-          "url": "https://www.bbc.com/news/articles/cgr2n8xx5gyo",
+          "title": "How to gain code execution on hundreds of millions of people and popular apps",
+          "url": "https://kibty.town/blog/todesktop/",
           "source": "Hacker News",
-          "published_at": "2025-02-28T01:32:01",
-          "score": 42,
-          "comments": 8
+          "published_at": "2025-03-01T05:05:35",
+          "score": 1120,
+          "comments": 297
         },
         {
-          "title": "Harvest the sun twice: Agrivoltaics promises sustainable food, energy and water",
-          "url": "https://www.sheffield.ac.uk/news/harvesting-sun-twice-agrivoltaics-shows-promise-sustainable-food-energy-and-water-management-east",
+          "title": "Inheriting is becoming nearly as important as working",
+          "url": "https://www.economist.com/leaders/2025/02/27/inheriting-is-becoming-nearly-as-important-as-working",
           "source": "Hacker News",
-          "published_at": "2025-02-28T00:56:14",
-          "score": 40,
-          "comments": 9
+          "published_at": "2025-03-01T07:20:38",
+          "score": 626,
+          "comments": 868
         },
         {
-          "title": "Hallucinations in code are the least dangerous form of LLM mistakes",
-          "url": "https://simonwillison.net/2025/Mar/2/hallucinations-in-code/",
+          "title": "The early days of Linux (2023)",
+          "url": "https://lwn.net/Articles/928581/",
           "source": "Hacker News",
-          "published_at": "2025-03-03T03:15:58",
-          "score": 230,
-          "comments": 173
+          "published_at": "2025-03-02T08:18:21",
+          "score": 442,
+          "comments": 133
+        },
+        {
+          "title": "China tells its AI leaders to avoid U.S. travel over security concerns",
+          "url": "https://www.wsj.com/world/china/china-ai-us-travel-advisory-ff248349",
+          "source": "Hacker News",
+          "published_at": "2025-03-01T21:28:03",
+          "score": 430,
+          "comments": 424
+        },
+        {
+          "title": "Show HN: Berlin Swapfest – Electronics flea market",
+          "url": "https://www.swapfest.berlin/",
+          "source": "Hacker News",
+          "published_at": "2025-03-02T05:11:26",
+          "score": 304,
+          "comments": 66
         },
         {
           "title": "The Pentium contains a complicated circuit to multiply by three",
           "url": "https://www.righto.com/2025/03/pentium-multiplier-adder-reverse-engineered.html",
           "source": "Hacker News",
           "published_at": "2025-03-03T02:04:35",
-          "score": 267,
-          "comments": 91
+          "score": 274,
+          "comments": 97
         },
         {
-          "title": "Substance in broccoli, celery inhibits graying of black hair",
-          "url": "https://www.asahi.com/ajw/articles/15604493",
+          "title": "Hallucinations in code are the least dangerous form of LLM mistakes",
+          "url": "https://simonwillison.net/2025/Mar/2/hallucinations-in-code/",
           "source": "Hacker News",
-          "published_at": "2025-02-28T06:10:57",
-          "score": 5,
-          "comments": 2
-        },
-        {
-          "title": "Show HN: Prompting LLMs in Bash scripts",
-          "url": "https://elijahpotter.dev/articles/prompting_large_language_models_in_bash_scripts",
-          "source": "Hacker News",
-          "published_at": "2025-02-28T03:46:55",
-          "score": 55,
-          "comments": 4
-        },
-        {
-          "title": "Gödel's theorem debunks the most important AI myth – Roger Penrose [video]",
-          "url": "https://www.youtube.com/watch?v=biUfMZ2dts8",
-          "source": "Hacker News",
-          "published_at": "2025-03-03T02:31:33",
-          "score": 125,
-          "comments": 252
+          "published_at": "2025-03-03T03:15:58",
+          "score": 240,
+          "comments": 181
         },
         {
           "title": "I struggled with Git, so I'm making a game to spare others the pain",
@@ -736,78 +736,14 @@
           "source": "Hacker News",
           "published_at": "2025-03-02T22:18:11",
           "score": 171,
-          "comments": 230
-        },
-        {
-          "title": "Morphing robot turns challenging terrain to its advantage",
-          "url": "https://actu.epfl.ch/news/morphing-robot-turns-challenging-terrain-to-its--2/",
-          "source": "Hacker News",
-          "published_at": "2025-02-27T21:36:10",
-          "score": 25,
-          "comments": 2
-        },
-        {
-          "title": "Evidence that our ancestors lived in rainforests 150k years ago",
-          "url": "https://www.sheffield.ac.uk/news/scientists-find-earliest-evidence-our-ancestors-lived-rainforests-150000-years-ago",
-          "source": "Hacker News",
-          "published_at": "2025-02-28T05:24:50",
-          "score": 29,
-          "comments": 4
-        },
-        {
-          "title": "Show HN: Recommendarr – AI Driven Recommendations Based on Sonarr/Radarr Media",
-          "url": "https://github.com/fingerthief/recommendarr",
-          "source": "Hacker News",
-          "published_at": "2025-03-02T22:25:21",
-          "score": 76,
-          "comments": 35
-        },
-        {
-          "title": "A mechanically verified garbage collector for OCaml [pdf]",
-          "url": "https://kcsrk.info/papers/verifiedgc_feb_25.pdf",
-          "source": "Hacker News",
-          "published_at": "2025-02-27T13:38:07",
-          "score": 26,
-          "comments": 3
-        },
-        {
-          "title": "Artificial Intelligence and the Labor Market [pdf]",
-          "url": "https://www.nber.org/system/files/working_papers/w33509/w33509.pdf",
-          "source": "Hacker News",
-          "published_at": "2025-03-03T06:14:01",
-          "score": 20,
-          "comments": 2
-        },
-        {
-          "title": "Nvidia GPU on bare metal NixOS Kubernetes cluster explained",
-          "url": "https://fangpenlin.com/posts/2025/03/01/nvidia-gpu-on-bare-metal-nixos-k8s-explained/",
-          "source": "Hacker News",
-          "published_at": "2025-03-03T04:26:21",
-          "score": 33,
-          "comments": 14
-        },
-        {
-          "title": "Changes in brain's 'sugar shield' could be key to understanding effects of aging",
-          "url": "https://news.stanford.edu/stories/2025/02/study-links-the-sugars-on-cell-surfaces-to-brain-resilience",
-          "source": "Hacker News",
-          "published_at": "2025-03-03T01:53:04",
-          "score": 25,
-          "comments": 1
-        },
-        {
-          "title": "Most IT companies fail to serve security.txt for RFC 9116 in 2025",
-          "url": "https://blog.hartwork.org/posts/companies-fail-to-serve-security-txt-rfc-9116/",
-          "source": "Hacker News",
-          "published_at": "2025-03-03T06:33:21",
-          "score": 38,
-          "comments": 24
+          "comments": 233
         },
         {
           "title": "Mucins keep the brain safe and could guard against ageing",
           "url": "https://www.nature.com/articles/d41586-025-00554-w",
           "source": "Hacker News",
           "published_at": "2025-02-28T16:31:27",
-          "score": 168,
+          "score": 170,
           "comments": 54
         },
         {
@@ -815,56 +751,8 @@
           "url": "https://www.interconnects.ai/p/gpt-45-not-a-frontier-model",
           "source": "Hacker News",
           "published_at": "2025-03-02T22:47:56",
-          "score": 155,
+          "score": 156,
           "comments": 147
-        },
-        {
-          "title": "The Empty Promise of AI-Generated Creativity",
-          "url": "https://hey.paris/posts/genai/",
-          "source": "Hacker News",
-          "published_at": "2025-03-03T09:13:51",
-          "score": 6,
-          "comments": 1
-        },
-        {
-          "title": "Passing the Buck: The story of the 2022 Wings Over Dallas air show collision",
-          "url": "https://admiralcloudberg.medium.com/passing-the-buck-the-story-of-the-2022-wings-over-dallas-air-show-collision-9bbe5947297b",
-          "source": "Hacker News",
-          "published_at": "2025-03-02T08:47:23",
-          "score": 86,
-          "comments": 24
-        },
-        {
-          "title": "How to gain code execution on hundreds of millions of people and popular apps",
-          "url": "https://kibty.town/blog/todesktop/",
-          "source": "Hacker News",
-          "published_at": "2025-03-01T05:05:35",
-          "score": 1120,
-          "comments": 295
-        },
-        {
-          "title": "President on Brink of Bailout for Bitcoin",
-          "url": "https://www.citationneeded.news/issue-78/",
-          "source": "Hacker News",
-          "published_at": "2025-03-03T10:41:21",
-          "score": 23,
-          "comments": 6
-        },
-        {
-          "title": "China tells its AI leaders to avoid U.S. travel over security concerns",
-          "url": "https://www.wsj.com/world/china/china-ai-us-travel-advisory-ff248349",
-          "source": "Hacker News",
-          "published_at": "2025-03-01T21:28:03",
-          "score": 429,
-          "comments": 424
-        },
-        {
-          "title": "Show HN: I took over Painteresque, a 14 year old Objective-C app and rebuilt it",
-          "url": "https://apps.apple.com/ca/app/painteresque-photo-to-sketch/id6742038583",
-          "source": "Hacker News",
-          "published_at": "2025-03-02T02:30:51",
-          "score": 108,
-          "comments": 22
         },
         {
           "title": "Micron launches new memory chips to keep up with AI processing",
@@ -879,192 +767,985 @@
           "source": "VentureBeat AI",
           "published_at": "2025-03-03T01:18:00",
           "summary": "From OpenAI's 'Deep Research' to DeepMind's 'AI co-scientist,' next-gen AI is smarter and astoundingly capable."
-        },
-        {
-          "title": "Weak cyber defenses are exposing critical infrastructure — how enterprises can proactively thwart cunning attackers to protect us all",
-          "url": "https://venturebeat.com/security/how-weak-cybersecurity-threatens-critical-infrastructure-and-what-enterprises-must-do-now/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-03-01T20:05:00",
-          "summary": "If businesses fail to up their cybersecurity game, the systems everyone relies on could face serious and devastating disruptions."
-        },
-        {
-          "title": "GPT-4.5 for enterprise: Do its accuracy and knowledge justify the cost?",
-          "url": "https://venturebeat.com/ai/gpt-4-5-for-enterprise-do-its-accuracy-and-knowledge-justify-the-cost/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-28T21:52:48",
-          "summary": "The price of GPT-4.5 is very steep. But it doesn't mean that it's a failure (or that it will always be so expensive)."
-        },
-        {
-          "title": "Semantic understanding, not just vectors: How Intuit’s data architecture powers agentic AI with measurable ROI",
-          "url": "https://venturebeat.com/ai/semantic-understanding-not-just-vectors-how-intuits-data-architecture-powers-agentic-ai-with-measurable-roi/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-28T14:00:00",
-          "summary": "From automation to autonomy: How Intuit's 'done for you' agentic AI architecture drives concrete business outcomes."
-        },
-        {
-          "title": "Industry observers say GPT-4.5 is an “odd” model, question its price",
-          "url": "https://venturebeat.com/ai/industry-observers-say-gpt-4-5-is-an-odd-model-question-its-price/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-27T22:30:33",
-          "summary": "Industry leaders find GPT 4.5 an interesting mix of capable model without pushing the boundaries of LLMs too much."
-        },
-        {
-          "title": "OpenAI releases ‘largest, most knowledgable’ model GPT-4.5 with reduced hallucinations and high API price",
-          "url": "https://venturebeat.com/ai/openai-releases-gpt-4-5/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-27T20:25:28",
-          "summary": "GPT-4.5 API pricing appears shockingly high, costing developers $75 and $180 for 1 million tokens in and out, respectively."
-        },
-        {
-          "title": "PlayerUnknown Productions reveals trailer for  emergent open-world survival game",
-          "url": "https://venturebeat.com/games/playerunknown-productions-reveals-trailer-for-emergent-open-world-survival-game/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-27T19:00:00",
-          "summary": "PUBG creator Brendan Greene is back with a trailer for Prologue: Go Wayback, which will hit Steam early access this summer."
-        },
-        {
-          "title": "Qodo’s open code embedding model sets new enterprise standard, beating OpenAI, Salesforce",
-          "url": "https://venturebeat.com/programming-development/qodos-open-code-embedding-model-sets-new-enterprise-standard-beating-openai-salesforce/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-27T15:00:24",
-          "summary": "The 1.5B-parameter Qodo-Embed-1-1.5B is available on Hugging Face under the OpenRAIL++-M license, allowing developers to integrate it freely"
-        },
-        {
-          "title": "Ampere accelerates expansion into telecom networking processors",
-          "url": "https://venturebeat.com/games/ampere-accelerates-expansion-into-telecom-networking-processors/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-27T15:00:00",
-          "summary": "Ampere is accelerating its expansion from Arm-based server processors for AI processing into networking chips for the telecom market."
-        },
-        {
-          "title": "You.com unveils AI research agent that processes 400+ sources at once",
-          "url": "https://venturebeat.com/ai/you-com-unveils-ai-research-agent-that-processes-400-sources-at-once/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-27T11:00:00",
-          "summary": "You.com launches ARI, a cutting-edge AI research agent that processes over 400 sources in minutes, revolutionizing market research and empowering faster, more accurate business decision-making."
-        },
-        {
-          "title": "Microsoft’s new Phi-4 AI models pack big performance in small packages",
-          "url": "https://venturebeat.com/ai/microsofts-new-phi-4-ai-models-pack-big-performance-in-small-packages/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-27T03:15:48",
-          "summary": "Microsoft's new Phi-4 AI models deliver breakthrough performance in a compact size, processing text, images and speech simultaneously while requiring less computing power than competitors."
-        },
-        {
-          "title": "Rebuilding Alexa: How Amazon is mixing models, agents and browser-use for smarter AI",
-          "url": "https://venturebeat.com/ai/rebuilding-alexa-how-amazon-is-mixing-models-agents-and-browser-use-for-smarter-ai/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-26T23:53:58",
-          "summary": "In rearchitecting the upgraded Alexa voice assistant, Amazon turned to model mixing to bring agentic capabilities to devices."
-        },
-        {
-          "title": "Nvidia CEO: Someday we’ll have 1B robotic cars on the road",
-          "url": "https://venturebeat.com/games/nvidia-ceo-someday-well-have-1b-robotic-cars-on-the-road/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-26T23:02:00",
-          "summary": "Nvidia CEO Jensen Huang predicted that someday we'll have a billion cars on the road and they will all be robotic cars."
-        },
-        {
-          "title": "Hugging Face launches FastRTC to simplify real-time AI voice and video apps",
-          "url": "https://venturebeat.com/ai/hugging-face-launches-fastrtc-to-simplify-real-time-ai-voice-and-video-apps/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-26T22:27:12",
-          "summary": "Hugging Face's new FastRTC library enables Python developers to build real-time voice and video AI applications in just a few lines of code."
-        },
-        {
-          "title": "ElevenLabs’ new speech-to-text model Scribe is here with highest accuracy rate so far (96.7% for English)",
-          "url": "https://venturebeat.com/ai/elevenlabs-new-speech-to-text-model-scribe-is-here-with-highest-accuracy-rate-so-far-96-7-for-english/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-26T21:56:35",
-          "summary": "ElevenLab's Scribe pricing makes it competitive for businesses that require high-volume transcription services with API-based integration."
-        },
-        {
-          "title": "Nvidia revenues hit $39.3B, up 78% in FYQ4 — with no sign of slowdown (updated)",
-          "url": "https://venturebeat.com/games/nvidia-revenues-hit-35-1b-up-94-in-fyq3/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-26T21:31:00",
-          "summary": "Nvidia reported that its revenue for the third fiscal quarter ended October 27 was $35.1 billion, up 17% from the previous quarter and up 94% from a year ago."
-        },
-        {
-          "title": "OctoTools: Stanford’s open-source framework optimizes LLM reasoning through modular tool orchestration",
-          "url": "https://venturebeat.com/ai/octotools-stanfords-open-source-framework-optimizes-llm-reasoning-through-modular-tool-orchestration/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-26T18:01:13",
-          "summary": "OctoTools plans, executes, and verifies LLM tool use, surpassing competitors with its unique modular architecture."
-        },
-        {
-          "title": "Akool combines GenAI models with 2D avatars to create lifelike characters",
-          "url": "https://venturebeat.com/games/akool-enhances-content-creation-with-genai-models-to-create-lifelike-avatars/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-26T14:00:00",
-          "summary": "Akool, a startup doing AI-driven avatars, announced enhancements to Akool Streaming Avatars that connect avatars with AI models."
-        },
-        {
-          "title": "IBM Granite 3.2 uses conditional reasoning, time series forecasting and document vision to tackle challenging enterprise use cases",
-          "url": "https://venturebeat.com/ai/ibm-granite-3-2-uses-conditional-reasoning-time-series-forecasting-and-document-vision-to-tackle-challenging-enterprise-use-cases/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-26T14:00:00",
-          "summary": "IBM is bringing the power of conditional reasoning to its open source Granite 3.2 LLM, in an effort to solve real enterprise AI challenges."
-        },
-        {
-          "title": "Qualcomm and Nokia Bell Labs show how multiple-vendor AI models can work together in wireless networks",
-          "url": "https://venturebeat.com/games/qualcomm-and-nokia-bell-labs-show-how-multiple-vendor-ai-models-can-work-together-in-wireless-networks/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-26T14:00:00",
-          "summary": "Qualcomm and Nokia Bell Labs showed how multiple-vendor AI models can work together in an interoperable way in wireless networks."
-        },
-        {
-          "title": "John Gaeta’s Escape.ai creates platform for emerging entertainment",
-          "url": "https://venturebeat.com/games/john-gaetas-escape-ai-creates-platform-for-emerging-entertainment/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-26T13:30:00",
-          "summary": "Escape.ai debuted the beta of its Neo Cinema content distribution platform and creator marketplace to spur emerging forms of entertainment."
-        },
-        {
-          "title": "Hume launches new text-to-speech model Octave that generates custom AI voices with adjustable emotions",
-          "url": "https://venturebeat.com/ai/hume-launches-text-to-speech-model-octave/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-26T12:39:24",
-          "summary": "Hume emphasized its Octave TTS pricing is around half the cost of the competing offering from AI voice creation startup ElevenLabs."
-        },
-        {
-          "title": "OpenAI expands Deep Research access to Plus users, heating up AI agent wars with DeepSeek and Claude",
-          "url": "https://venturebeat.com/ai/openai-expands-deep-research-access-to-plus-users-heating-up-ai-agent-wars-with-deepseek-and-claude/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-25T23:53:56",
-          "summary": "OpenAI expands Deep Research AI agent to ChatGPT users, intensifying competition with DeepSeek and Anthropic."
-        },
-        {
-          "title": "How big U.S. bank BNY manages armies of AI agents",
-          "url": "https://venturebeat.com/ai/how-big-u-s-bank-bny-manages-armies-of-ai-agents/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-25T17:08:53",
-          "summary": "As investment bank BNY plans to upgrade its AI tool Eliza, it's looking forward to creating smart recommendation AI agents."
-        },
-        {
-          "title": "Google makes Gemini Code Assist free with 180,000 code completions per month as AI-powered dev race heats up",
-          "url": "https://venturebeat.com/programming-development/google-makes-gemini-code-assist-free/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-25T15:38:32",
-          "summary": "Google’s decision to provide a free version with significantly higher usage limits positions Gemini Code Assist as a compelling choice."
-        },
-        {
-          "title": "Adobe launches first Photoshop mobile app and it has amazing Firefly AI-powered object detection, editing, and effects",
-          "url": "https://venturebeat.com/ai/adobe-launches-first-photoshop-mobile-app-and-it-has-amazing-firefly-ai-powered-object-detection-editing-and-effects/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-25T14:18:10",
-          "summary": "Photoshop mobile includes Firefly-powered gen AI features like Generative Fill and Generative Expand and has mobile-adjusted touch targets."
-        },
-        {
-          "title": "Prompt AI’s Seemour launches visual intelligence platform for the home",
-          "url": "https://venturebeat.com/games/prompt-ais-seemour-launches-visual-intelligence-platform-for-the-home/",
-          "source": "VentureBeat AI",
-          "published_at": "2025-02-25T14:00:00",
-          "summary": "Prompt AI, a smart home and visual intelligence research and technology company, has launched Seemour, a visual intelligence platform."
         }
       ],
-      "papers": []
+      "papers": [
+        {
+          "title": "LLM Post-Training: A Deep Dive into Reasoning Large Language Models",
+          "authors": [
+            "Komal Kumar",
+            "Tajamul Ashraf",
+            "Omkar Thawakar",
+            "Rao Muhammad Anwer",
+            "Hisham Cholakkal",
+            "Mubarak Shah",
+            "Ming-Hsuan Yang",
+            "Phillip H. S. Torr",
+            "Salman Khan",
+            "Fahad Shahbaz Khan"
+          ],
+          "summary": "Large Language Models (LLMs) have transformed the natural language processing\nlandscape and brought to life diverse applications. Pretraining on vast\nweb-scale data has laid the foundation for these models, yet the research\ncommunity is now increasingly shifting focus toward post-training techniques to\nachieve further breakthroughs. While pretraining provides a broad linguistic\nfoundation, post-training methods enable LLMs to refine their knowledge,\nimprove reasoning, enhance factual accuracy, and align more effectively with\nuser intents and ethical considerations. Fine-tuning, reinforcement learning,\nand test-time scaling have emerged as critical strategies for optimizing LLMs\nperformance, ensuring robustness, and improving adaptability across various\nreal-world tasks. This survey provides a systematic exploration of\npost-training methodologies, analyzing their role in refining LLMs beyond\npretraining, addressing key challenges such as catastrophic forgetting, reward\nhacking, and inference-time trade-offs. We highlight emerging directions in\nmodel alignment, scalable adaptation, and inference-time reasoning, and outline\nfuture research directions. We also provide a public repository to continually\ntrack developments in this fast-evolving field:\nhttps://github.com/mbzuai-oryx/Awesome-LLM-Post-training.",
+          "published_at": "2025-02-28T18:59:54+00:00",
+          "url": "http://arxiv.org/abs/2502.21321v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21321v1",
+          "categories": [
+            "cs.CL",
+            "cs.CV"
+          ]
+        },
+        {
+          "title": "TomoSelfDEQ: Self-Supervised Deep Equilibrium Learning for Sparse-Angle CT Reconstruction",
+          "authors": [
+            "Tatiana A. Bubba",
+            "Matteo Santacesaria",
+            "Andrea Sebastiani"
+          ],
+          "summary": "Deep learning has emerged as a powerful tool for solving inverse problems in\nimaging, including computed tomography (CT). However, most approaches require\npaired training data with ground truth images, which can be difficult to\nobtain, e.g., in medical applications. We present TomoSelfDEQ, a\nself-supervised Deep Equilibrium (DEQ) framework for sparse-angle CT\nreconstruction that trains directly on undersampled measurements. We establish\ntheoretical guarantees showing that, under suitable assumptions, our\nself-supervised updates match those of fully-supervised training with a loss\nincluding the (possibly non-unitary) forward operator like the CT forward map.\nNumerical experiments on sparse-angle CT data confirm this finding, also\ndemonstrating that TomoSelfDEQ outperforms existing self-supervised methods,\nachieving state-of-the-art results with as few as 16 projection angles.",
+          "published_at": "2025-02-28T18:59:52+00:00",
+          "url": "http://arxiv.org/abs/2502.21320v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21320v1",
+          "categories": [
+            "eess.IV",
+            "cs.CV"
+          ]
+        },
+        {
+          "title": "How far can we go with ImageNet for Text-to-Image generation?",
+          "authors": [
+            "L. Degeorge",
+            "A. Ghosh",
+            "N. Dufour",
+            "D. Picard",
+            "V. Kalogeiton"
+          ],
+          "summary": "Recent text-to-image (T2I) generation models have achieved remarkable results\nby training on billion-scale datasets, following a `bigger is better' paradigm\nthat prioritizes data quantity over quality. We challenge this established\nparadigm by demonstrating that strategic data augmentation of small,\nwell-curated datasets can match or outperform models trained on massive\nweb-scraped collections. Using only ImageNet enhanced with well-designed text\nand image augmentations, we achieve a +2 overall score over SD-XL on GenEval\nand +5 on DPGBench while using just 1/10th the parameters and 1/1000th the\ntraining images. Our results suggest that strategic data augmentation, rather\nthan massive datasets, could offer a more sustainable path forward for T2I\ngeneration.",
+          "published_at": "2025-02-28T18:59:42+00:00",
+          "url": "http://arxiv.org/abs/2502.21318v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21318v1",
+          "categories": [
+            "cs.CV"
+          ]
+        },
+        {
+          "title": "Identifying Emerging Concepts in Large Corpora",
+          "authors": [
+            "Sibo Ma",
+            "Julian Nyarko"
+          ],
+          "summary": "We introduce a new method to identify emerging concepts in large text\ncorpora. By analyzing changes in the heatmaps of the underlying embedding\nspace, we are able to detect these concepts with high accuracy shortly after\nthey originate, in turn outperforming common alternatives. We further\ndemonstrate the utility of our approach by analyzing speeches in the U.S.\nSenate from 1941 to 2015. Our results suggest that the minority party is more\nactive in introducing new concepts into the Senate discourse. We also identify\nspecific concepts that closely correlate with the Senators' racial, ethnic, and\ngender identities. An implementation of our method is publicly available.",
+          "published_at": "2025-02-28T18:59:15+00:00",
+          "url": "http://arxiv.org/abs/2502.21315v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21315v1",
+          "categories": [
+            "cs.CL",
+            "cs.CY"
+          ]
+        },
+        {
+          "title": "Raccoon: Multi-stage Diffusion Training with Coarse-to-Fine Curating Videos",
+          "authors": [
+            "Zhiyu Tan",
+            "Junyan Wang",
+            "Hao Yang",
+            "Luozheng Qin",
+            "Hesen Chen",
+            "Qiang Zhou",
+            "Hao Li"
+          ],
+          "summary": "Text-to-video generation has demonstrated promising progress with the advent\nof diffusion models, yet existing approaches are limited by dataset quality and\ncomputational resources. To address these limitations, this paper presents a\ncomprehensive approach that advances both data curation and model design. We\nintroduce CFC-VIDS-1M, a high-quality video dataset constructed through a\nsystematic coarse-to-fine curation pipeline. The pipeline first evaluates video\nquality across multiple dimensions, followed by a fine-grained stage that\nleverages vision-language models to enhance text-video alignment and semantic\nrichness. Building upon the curated dataset's emphasis on visual quality and\ntemporal coherence, we develop RACCOON, a transformer-based architecture with\ndecoupled spatial-temporal attention mechanisms. The model is trained through a\nprogressive four-stage strategy designed to efficiently handle the complexities\nof video generation. Extensive experiments demonstrate that our integrated\napproach of high-quality data curation and efficient training strategy\ngenerates visually appealing and temporally coherent videos while maintaining\ncomputational efficiency. We will release our dataset, code, and models.",
+          "published_at": "2025-02-28T18:56:35+00:00",
+          "url": "http://arxiv.org/abs/2502.21314v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21314v1",
+          "categories": [
+            "cs.CV"
+          ]
+        },
+        {
+          "title": "Unsupervised Parameter Efficient Source-free Post-pretraining",
+          "authors": [
+            "Abhishek Jha",
+            "Tinne Tuytelaars",
+            "Yuki M. Asano"
+          ],
+          "summary": "Following the success in NLP, the best vision models are now in the billion\nparameter ranges. Adapting these large models to a target distribution has\nbecome computationally and economically prohibitive. Addressing this challenge,\nwe introduce UpStep, an Unsupervised Parameter-efficient Source-free\npost-pretraining approach, designed to efficiently adapt a base model from a\nsource domain to a target domain: i) we design a self-supervised training\nscheme to adapt a pretrained model on an unlabeled target domain in a setting\nwhere source domain data is unavailable. Such source-free setting comes with\nthe risk of catastrophic forgetting, hence, ii) we propose center vector\nregularization (CVR), a set of auxiliary operations that minimize catastrophic\nforgetting and additionally reduces the computational cost by skipping\nbackpropagation in 50\\% of the training iterations. Finally iii) we perform\nthis adaptation process in a parameter-efficient way by adapting the pretrained\nmodel through low-rank adaptation methods, resulting in a fraction of\nparameters to optimize. We utilize various general backbone architectures, both\nsupervised and unsupervised, trained on Imagenet as our base model and adapt\nthem to a diverse set of eight target domains demonstrating the adaptability\nand generalizability of our proposed approach.",
+          "published_at": "2025-02-28T18:54:51+00:00",
+          "url": "http://arxiv.org/abs/2502.21313v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21313v1",
+          "categories": [
+            "cs.CV",
+            "cs.LG"
+          ]
+        },
+        {
+          "title": "AutoComb: Automated Comb Sign Detector for 3D CTE Scans",
+          "authors": [
+            "Shashwat Gupta",
+            "Sarthak Gupta",
+            "Akshan Agrawal",
+            "Mahim Naaz",
+            "Rajanikanth Yadav",
+            "Priyanka Bagade"
+          ],
+          "summary": "Comb Sign is an important imaging biomarker to detect multiple\ngastrointestinal diseases. It shows up as increased blood flow along the\nintestinal wall indicating potential abnormality, which helps doctors diagnose\ninflammatory conditions. Despite its clinical significance, current detection\nmethods are manual, time-intensive, and prone to subjective interpretation due\nto the need for multi-planar image-orientation. To the best of our knowledge,\nwe are the first to propose a fully automated technique for the detection of\nComb Sign from CTE scans. Our novel approach is based on developing a\nprobabilistic map that shows areas of pathological hypervascularity by\nidentifying fine vascular bifurcations and wall enhancement via processing\nthrough stepwise algorithmic modules. These modules include utilising deep\nlearning segmentation model, a Gaussian Mixture Model (GMM), vessel extraction\nusing vesselness filter, iterative probabilistic enhancement of vesselness via\nneighborhood maximization and a distance-based weighting scheme over the\nvessels. Experimental results demonstrate that our pipeline effectively\nidentifies Comb Sign, offering an objective, accurate, and reliable tool to\nenhance diagnostic accuracy in Crohn's disease and related hypervascular\nconditions where Comb Sign is considered as one of the important biomarkers.",
+          "published_at": "2025-02-28T18:53:32+00:00",
+          "url": "http://arxiv.org/abs/2502.21311v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21311v1",
+          "categories": [
+            "eess.IV",
+            "cs.CV"
+          ]
+        },
+        {
+          "title": "FANformer: Improving Large Language Models Through Effective Periodicity Modeling",
+          "authors": [
+            "Yihong Dong",
+            "Ge Li",
+            "Xue Jiang",
+            "Yongding Tao",
+            "Kechi Zhang",
+            "Hao Zhu",
+            "Huanyu Liu",
+            "Jiazheng Ding",
+            "Jia Li",
+            "Jinliang Deng",
+            "Hong Mei"
+          ],
+          "summary": "Periodicity, as one of the most important basic characteristics, lays the\nfoundation for facilitating structured knowledge acquisition and systematic\ncognitive processes within human learning paradigms. However, the potential\nflaws of periodicity modeling in Transformer affect the learning efficiency and\nestablishment of underlying principles from data for large language models\n(LLMs) built upon it. In this paper, we demonstrate that integrating effective\nperiodicity modeling can improve the learning efficiency and performance of\nLLMs. We introduce FANformer, which integrates Fourier Analysis Network (FAN)\ninto attention mechanism to achieve efficient periodicity modeling, by\nmodifying the feature projection process of attention mechanism. Extensive\nexperimental results on language modeling show that FANformer consistently\noutperforms Transformer when scaling up model size and training tokens,\nunderscoring its superior learning efficiency. To further validate the\neffectiveness of FANformer, we pretrain a FANformer-1B on 1 trillion tokens.\nFANformer-1B exhibits marked improvements on downstream tasks compared to\nopen-source LLMs with similar model parameters or training tokens. The results\nposition FANformer as an effective and promising architecture for advancing\nLLMs.",
+          "published_at": "2025-02-28T18:52:24+00:00",
+          "url": "http://arxiv.org/abs/2502.21309v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21309v1",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.LG"
+          ]
+        },
+        {
+          "title": "Clustering Context in Off-Policy Evaluation",
+          "authors": [
+            "Daniel Guzman-Olivares",
+            "Philipp Schmidt",
+            "Jacek Golebiowski",
+            "Artur Bekasov"
+          ],
+          "summary": "Off-policy evaluation can leverage logged data to estimate the effectiveness\nof new policies in e-commerce, search engines, media streaming services, or\nautomatic diagnostic tools in healthcare. However, the performance of baseline\noff-policy estimators like IPS deteriorates when the logging policy\nsignificantly differs from the evaluation policy. Recent work proposes sharing\ninformation across similar actions to mitigate this problem. In this work, we\npropose an alternative estimator that shares information across similar\ncontexts using clustering. We study the theoretical properties of the proposed\nestimator, characterizing its bias and variance under different conditions. We\nalso compare the performance of the proposed estimator and existing approaches\nin various synthetic problems, as well as a real-world recommendation dataset.\nOur experimental results confirm that clustering contexts improves estimation\naccuracy, especially in deficient information settings.",
+          "published_at": "2025-02-28T18:40:41+00:00",
+          "url": "http://arxiv.org/abs/2502.21304v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21304v1",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "stat.ML"
+          ]
+        },
+        {
+          "title": "Persuasion Should be Double-Blind: A Multi-Domain Dialogue Dataset With Faithfulness Based on Causal Theory of Mind",
+          "authors": [
+            "Dingyi Zhang",
+            "Deyu Zhou"
+          ],
+          "summary": "Persuasive dialogue plays a pivotal role in human communication, influencing\nvarious domains. Recent persuasive dialogue datasets often fail to align with\nreal-world interpersonal interactions, leading to unfaithful representations.\nFor instance, unrealistic scenarios may arise, such as when the persuadee\nexplicitly instructs the persuader on which persuasion strategies to employ,\nwith each of the persuadee's questions corresponding to a specific strategy for\nthe persuader to follow. This issue can be attributed to a violation of the\n\"Double Blind\" condition, where critical information is fully shared between\nparticipants. In actual human interactions, however, key information such as\nthe mental state of the persuadee and the persuasion strategies of the\npersuader is not directly accessible. The persuader must infer the persuadee's\nmental state using Theory of Mind capabilities and construct arguments that\nalign with the persuadee's motivations. To address this gap, we introduce\nToMMA, a novel multi-agent framework for dialogue generation that is guided by\ncausal Theory of Mind. This framework ensures that information remains\nundisclosed between agents, preserving \"double-blind\" conditions, while causal\nToM directs the persuader's reasoning, enhancing alignment with human-like\npersuasion dynamics. Consequently, we present CToMPersu, a multi-domain,\nmulti-turn persuasive dialogue dataset that tackles both double-blind and\nlogical coherence issues, demonstrating superior performance across multiple\nmetrics and achieving better alignment with real human dialogues. Our dataset\nand prompts are available at https://github.com/DingyiZhang/ToMMA-CToMPersu .",
+          "published_at": "2025-02-28T18:28:16+00:00",
+          "url": "http://arxiv.org/abs/2502.21297v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21297v1",
+          "categories": [
+            "cs.CL"
+          ]
+        },
+        {
+          "title": "MIGE: A Unified Framework for Multimodal Instruction-Based Image Generation and Editing",
+          "authors": [
+            "Xueyun Tian",
+            "Wei Li",
+            "Bingbing Xu",
+            "Yige Yuan",
+            "Yuanzhuo Wang",
+            "Huawei Shen"
+          ],
+          "summary": "Despite significant progress in diffusion-based image generation,\nsubject-driven generation and instruction-based editing remain challenging.\nExisting methods typically treat them separately, struggling with limited\nhigh-quality data and poor generalization. However, both tasks require\ncapturing complex visual variations while maintaining consistency between\ninputs and outputs. Therefore, we propose MIGE, a unified framework that\nstandardizes task representations using multimodal instructions. It treats\nsubject-driven generation as creation on a blank canvas and instruction-based\nediting as modification of an existing image, establishing a shared\ninput-output formulation. MIGE introduces a novel multimodal encoder that maps\nfree-form multimodal instructions into a unified vision-language space,\nintegrating visual and semantic features through a feature fusion\nmechanism.This unification enables joint training of both tasks, providing two\nkey advantages: (1) Cross-Task Enhancement: By leveraging shared visual and\nsemantic representations, joint training improves instruction adherence and\nvisual consistency in both subject-driven generation and instruction-based\nediting. (2) Generalization: Learning in a unified format facilitates\ncross-task knowledge transfer, enabling MIGE to generalize to novel\ncompositional tasks, including instruction-based subject-driven editing.\nExperiments show that MIGE excels in both subject-driven generation and\ninstruction-based editing while setting a state-of-the-art in the new task of\ninstruction-based subject-driven editing. Code and model have been publicly\navailable at https://github.com/Eureka-Maggie/MIGE.",
+          "published_at": "2025-02-28T18:21:08+00:00",
+          "url": "http://arxiv.org/abs/2502.21291v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21291v1",
+          "categories": [
+            "cs.CV"
+          ]
+        },
+        {
+          "title": "Contextualizing biological perturbation experiments through language",
+          "authors": [
+            "Menghua Wu",
+            "Russell Littman",
+            "Jacob Levine",
+            "Lin Qiu",
+            "Tommaso Biancalani",
+            "David Richmond",
+            "Jan-Christian Huetter"
+          ],
+          "summary": "High-content perturbation experiments allow scientists to probe biomolecular\nsystems at unprecedented resolution, but experimental and analysis costs pose\nsignificant barriers to widespread adoption. Machine learning has the potential\nto guide efficient exploration of the perturbation space and extract novel\ninsights from these data. However, current approaches neglect the semantic\nrichness of the relevant biology, and their objectives are misaligned with\ndownstream biological analyses. In this paper, we hypothesize that large\nlanguage models (LLMs) present a natural medium for representing complex\nbiological relationships and rationalizing experimental outcomes. We propose\nPerturbQA, a benchmark for structured reasoning over perturbation experiments.\nUnlike current benchmarks that primarily interrogate existing knowledge,\nPerturbQA is inspired by open problems in perturbation modeling: prediction of\ndifferential expression and change of direction for unseen perturbations, and\ngene set enrichment. We evaluate state-of-the-art machine learning and\nstatistical approaches for modeling perturbations, as well as standard LLM\nreasoning strategies, and we find that current methods perform poorly on\nPerturbQA. As a proof of feasibility, we introduce Summer (SUMMarize, retrievE,\nand answeR, a simple, domain-informed LLM framework that matches or exceeds the\ncurrent state-of-the-art. Our code and data are publicly available at\nhttps://github.com/genentech/PerturbQA.",
+          "published_at": "2025-02-28T18:15:31+00:00",
+          "url": "http://arxiv.org/abs/2502.21290v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21290v1",
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "q-bio.QM"
+          ]
+        },
+        {
+          "title": "Enabling AutoML for Zero-Touch Network Security: Use-Case Driven Analysis",
+          "authors": [
+            "Li Yang",
+            "Mirna El Rajab",
+            "Abdallah Shami",
+            "Sami Muhaidat"
+          ],
+          "summary": "Zero-Touch Networks (ZTNs) represent a state-of-the-art paradigm shift\ntowards fully automated and intelligent network management, enabling the\nautomation and intelligence required to manage the complexity, scale, and\ndynamic nature of next-generation (6G) networks. ZTNs leverage Artificial\nIntelligence (AI) and Machine Learning (ML) to enhance operational efficiency,\nsupport intelligent decision-making, and ensure effective resource allocation.\nHowever, the implementation of ZTNs is subject to security challenges that need\nto be resolved to achieve their full potential. In particular, two critical\nchallenges arise: the need for human expertise in developing AI/ML-based\nsecurity mechanisms, and the threat of adversarial attacks targeting AI/ML\nmodels. In this survey paper, we provide a comprehensive review of current\nsecurity issues in ZTNs, emphasizing the need for advanced AI/ML-based security\nmechanisms that require minimal human intervention and protect AI/ML models\nthemselves. Furthermore, we explore the potential of Automated ML (AutoML)\ntechnologies in developing robust security solutions for ZTNs. Through case\nstudies, we illustrate practical approaches to securing ZTNs against both\nconventional and AI/ML-specific threats, including the development of\nautonomous intrusion detection systems and strategies to combat Adversarial ML\n(AML) attacks. The paper concludes with a discussion of the future research\ndirections for the development of ZTN security approaches.",
+          "published_at": "2025-02-28T18:06:03+00:00",
+          "url": "http://arxiv.org/abs/2502.21286v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21286v1",
+          "categories": [
+            "cs.CR",
+            "cs.LG",
+            "cs.NI",
+            "68T01, 90C31",
+            "I.2.1; I.2.6; C.2.0"
+          ]
+        },
+        {
+          "title": "Controlled Model Debiasing through Minimal and Interpretable Updates",
+          "authors": [
+            "Federico Di Gennaro",
+            "Thibault Laugel",
+            "Vincent Grari",
+            "Marcin Detyniecki"
+          ],
+          "summary": "Traditional approaches to learning fair machine learning models often require\nrebuilding models from scratch, generally without accounting for potentially\nexisting previous models. In a context where models need to be retrained\nfrequently, this can lead to inconsistent model updates, as well as redundant\nand costly validation testing. To address this limitation, we introduce the\nnotion of controlled model debiasing, a novel supervised learning task relying\non two desiderata: that the differences between new fair model and the existing\none should be (i) interpretable and (ii) minimal. After providing theoretical\nguarantees to this new problem, we introduce a novel algorithm for algorithmic\nfairness, COMMOD, that is both model-agnostic and does not require the\nsensitive attribute at test time. In addition, our algorithm is explicitly\ndesigned to enforce minimal and interpretable changes between biased and\ndebiased predictions -a property that, while highly desirable in high-stakes\napplications, is rarely prioritized as an explicit objective in fairness\nliterature. Our approach combines a concept-based architecture and adversarial\nlearning and we demonstrate through empirical results that it achieves\ncomparable performance to state-of-the-art debiasing methods while performing\nminimal and interpretable prediction changes.",
+          "published_at": "2025-02-28T18:03:55+00:00",
+          "url": "http://arxiv.org/abs/2502.21284v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21284v1",
+          "categories": [
+            "cs.LG",
+            "stat.ML"
+          ]
+        },
+        {
+          "title": "Back to the Future Cyclopean Stereo: a human perception approach unifying deep and geometric constraints",
+          "authors": [
+            "Sherlon Almeida da Silva",
+            "Davi Geiger",
+            "Luiz Velho",
+            "Moacir Antonelli Ponti"
+          ],
+          "summary": "We innovate in stereo vision by explicitly providing analytical 3D surface\nmodels as viewed by a cyclopean eye model that incorporate depth\ndiscontinuities and occlusions. This geometrical foundation combined with\nlearned stereo features allows our system to benefit from the strengths of both\napproaches. We also invoke a prior monocular model of surfaces to fill in\nocclusion regions or texture-less regions where data matching is not\nsufficient. Our results already are on par with the state-of-the-art purely\ndata-driven methods and are of much better visual quality, emphasizing the\nimportance of the 3D geometrical model to capture critical visual information.\nSuch qualitative improvements may find applicability in virtual reality, for a\nbetter human experience, as well as in robotics, for reducing critical errors.\nOur approach aims to demonstrate that understanding and modeling geometrical\nproperties of 3D surfaces is beneficial to computer vision research.",
+          "published_at": "2025-02-28T17:58:20+00:00",
+          "url": "http://arxiv.org/abs/2502.21280v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21280v1",
+          "categories": [
+            "cs.CV"
+          ]
+        },
+        {
+          "title": "L-Lipschitz Gershgorin ResNet Network",
+          "authors": [
+            "Marius F. R. Juston",
+            "William R. Norris",
+            "Dustin Nottage",
+            "Ahmet Soylemezoglu"
+          ],
+          "summary": "Deep residual networks (ResNets) have demonstrated outstanding success in\ncomputer vision tasks, attributed to their ability to maintain gradient flow\nthrough deep architectures. Simultaneously, controlling the Lipschitz bound in\nneural networks has emerged as an essential area of research for enhancing\nadversarial robustness and network certifiability. This paper uses a rigorous\napproach to design $\\mathcal{L}$-Lipschitz deep residual networks using a\nLinear Matrix Inequality (LMI) framework. The ResNet architecture was\nreformulated as a pseudo-tri-diagonal LMI with off-diagonal elements and\nderived closed-form constraints on network parameters to ensure\n$\\mathcal{L}$-Lipschitz continuity. To address the lack of explicit eigenvalue\ncomputations for such matrix structures, the Gershgorin circle theorem was\nemployed to approximate eigenvalue locations, guaranteeing the LMI's negative\nsemi-definiteness. Our contributions include a provable parameterization\nmethodology for constructing Lipschitz-constrained networks and a compositional\nframework for managing recursive systems within hierarchical architectures.\nThese findings enable robust network designs applicable to adversarial\nrobustness, certified training, and control systems. However, a limitation was\nidentified in the Gershgorin-based approximations, which over-constrain the\nsystem, suppressing non-linear dynamics and diminishing the network's\nexpressive capacity.",
+          "published_at": "2025-02-28T17:57:57+00:00",
+          "url": "http://arxiv.org/abs/2502.21279v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21279v1",
+          "categories": [
+            "cs.LG",
+            "cs.AI"
+          ]
+        },
+        {
+          "title": "Does Generation Require Memorization? Creative Diffusion Models using Ambient Diffusion",
+          "authors": [
+            "Kulin Shah",
+            "Alkis Kalavasis",
+            "Adam R. Klivans",
+            "Giannis Daras"
+          ],
+          "summary": "There is strong empirical evidence that the state-of-the-art diffusion\nmodeling paradigm leads to models that memorize the training set, especially\nwhen the training set is small. Prior methods to mitigate the memorization\nproblem often lead to a decrease in image quality. Is it possible to obtain\nstrong and creative generative models, i.e., models that achieve high\ngeneration quality and low memorization? Despite the current pessimistic\nlandscape of results, we make significant progress in pushing the trade-off\nbetween fidelity and memorization. We first provide theoretical evidence that\nmemorization in diffusion models is only necessary for denoising problems at\nlow noise scales (usually used in generating high-frequency details). Using\nthis theoretical insight, we propose a simple, principled method to train the\ndiffusion models using noisy data at large noise scales. We show that our\nmethod significantly reduces memorization without decreasing the image quality,\nfor both text-conditional and unconditional models and for a variety of data\navailability settings.",
+          "published_at": "2025-02-28T17:57:48+00:00",
+          "url": "http://arxiv.org/abs/2502.21278v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21278v1",
+          "categories": [
+            "cs.LG",
+            "stat.ML"
+          ]
+        },
+        {
+          "title": "BAnG: Bidirectional Anchored Generation for Conditional RNA Design",
+          "authors": [
+            "Roman Klypa",
+            "Alberto Bietti",
+            "Sergei Grudinin"
+          ],
+          "summary": "Designing RNA molecules that interact with specific proteins is a critical\nchallenge in experimental and computational biology. Existing computational\napproaches require a substantial amount of experimentally determined RNA\nsequences for each specific protein or a detailed knowledge of RNA structure,\nrestricting their utility in practice. To address this limitation, we develop\nRNA-BAnG, a deep learning-based model designed to generate RNA sequences for\nprotein interactions without these requirements. Central to our approach is a\nnovel generative method, Bidirectional Anchored Generation (BAnG), which\nleverages the observation that protein-binding RNA sequences often contain\nfunctional binding motifs embedded within broader sequence contexts. We first\nvalidate our method on generic synthetic tasks involving similar localized\nmotifs to those appearing in RNAs, demonstrating its benefits over existing\ngenerative approaches. We then evaluate our model on biological sequences,\nshowing its effectiveness for conditional RNA sequence design given a binding\nprotein.",
+          "published_at": "2025-02-28T17:51:00+00:00",
+          "url": "http://arxiv.org/abs/2502.21274v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21274v1",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "q-bio.BM"
+          ]
+        },
+        {
+          "title": "Adaptive Keyframe Sampling for Long Video Understanding",
+          "authors": [
+            "Xi Tang",
+            "Jihao Qiu",
+            "Lingxi Xie",
+            "Yunjie Tian",
+            "Jianbin Jiao",
+            "Qixiang Ye"
+          ],
+          "summary": "Multimodal large language models (MLLMs) have enabled open-world visual\nunderstanding by injecting visual input as extra tokens into large language\nmodels (LLMs) as contexts. However, when the visual input changes from a single\nimage to a long video, the above paradigm encounters difficulty because the\nvast amount of video tokens has significantly exceeded the maximal capacity of\nMLLMs. Therefore, existing video-based MLLMs are mostly established upon\nsampling a small portion of tokens from input data, which can cause key\ninformation to be lost and thus produce incorrect answers. This paper presents\na simple yet effective algorithm named Adaptive Keyframe Sampling (AKS). It\ninserts a plug-and-play module known as keyframe selection, which aims to\nmaximize the useful information with a fixed number of video tokens. We\nformulate keyframe selection as an optimization involving (1) the relevance\nbetween the keyframes and the prompt, and (2) the coverage of the keyframes\nover the video, and present an adaptive algorithm to approximate the best\nsolution. Experiments on two long video understanding benchmarks validate that\nAdaptive Keyframe Sampling improves video QA accuracy (beyond strong baselines)\nupon selecting informative keyframes. Our study reveals the importance of\ninformation pre-filtering in video-based MLLMs. Code is available at\nhttps://github.com/ncTimTang/AKS.",
+          "published_at": "2025-02-28T17:46:29+00:00",
+          "url": "http://arxiv.org/abs/2502.21271v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21271v1",
+          "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.LG"
+          ]
+        },
+        {
+          "title": "Dynamical Decoupling of Generalization and Overfitting in Large Two-Layer Networks",
+          "authors": [
+            "Andrea Montanari",
+            "Pierfrancesco Urbani"
+          ],
+          "summary": "The inductive bias and generalization properties of large machine learning\nmodels are -- to a substantial extent -- a byproduct of the optimization\nalgorithm used for training. Among others, the scale of the random\ninitialization, the learning rate, and early stopping all have crucial impact\non the quality of the model learnt by stochastic gradient descent or related\nalgorithms. In order to understand these phenomena, we study the training\ndynamics of large two-layer neural networks. We use a well-established\ntechnique from non-equilibrium statistical physics (dynamical mean field\ntheory) to obtain an asymptotic high-dimensional characterization of this\ndynamics. This characterization applies to a Gaussian approximation of the\nhidden neurons non-linearity, and empirically captures well the behavior of\nactual neural network models.\n  Our analysis uncovers several interesting new phenomena in the training\ndynamics: $(i)$ The emergence of a slow time scale associated with the growth\nin Gaussian/Rademacher complexity; $(ii)$ As a consequence, algorithmic\ninductive bias towards small complexity, but only if the initialization has\nsmall enough complexity; $(iii)$ A separation of time scales between feature\nlearning and overfitting; $(iv)$ A non-monotone behavior of the test error and,\ncorrespondingly, a `feature unlearning' phase at large times.",
+          "published_at": "2025-02-28T17:45:26+00:00",
+          "url": "http://arxiv.org/abs/2502.21269v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21269v1",
+          "categories": [
+            "stat.ML",
+            "cond-mat.dis-nn",
+            "cs.LG"
+          ]
+        },
+        {
+          "title": "Supporting the development of Machine Learning for fundamental science in a federated Cloud with the AI_INFN platform",
+          "authors": [
+            "Lucio Anderlini",
+            "Matteo Barbetti",
+            "Giulio Bianchini",
+            "Diego Ciangottini",
+            "Stefano Dal Pra",
+            "Diego Michelotto",
+            "Carmelo Pellegrino",
+            "Rosa Petrini",
+            "Alessandro Pascolini",
+            "Daniele Spiga"
+          ],
+          "summary": "Machine Learning (ML) is driving a revolution in the way scientists design,\ndevelop, and deploy data-intensive software. However, the adoption of ML\npresents new challenges for the computing infrastructure, particularly in terms\nof provisioning and orchestrating access to hardware accelerators for\ndevelopment, testing, and production. The INFN-funded project AI_INFN\n(\"Artificial Intelligence at INFN\") aims at fostering the adoption of ML\ntechniques within INFN use cases by providing support on multiple aspects,\nincluding the provision of AI-tailored computing resources. It leverages\ncloud-native solutions in the context of INFN Cloud, to share hardware\naccelerators as effectively as possible, ensuring the diversity of the\nInstitute's research activities is not compromised. In this contribution, we\nprovide an update on the commissioning of a Kubernetes platform designed to\nease the development of GPU-powered data analysis workflows and their\nscalability on heterogeneous, distributed computing resources, possibly\nfederated as Virtual Kubelets with the interLink provider.",
+          "published_at": "2025-02-28T17:42:58+00:00",
+          "url": "http://arxiv.org/abs/2502.21266v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21266v1",
+          "categories": [
+            "cs.DC",
+            "cs.AI",
+            "physics.data-an"
+          ]
+        },
+        {
+          "title": "ReaLJam: Real-Time Human-AI Music Jamming with Reinforcement Learning-Tuned Transformers",
+          "authors": [
+            "Alexander Scarlatos",
+            "Yusong Wu",
+            "Ian Simon",
+            "Adam Roberts",
+            "Tim Cooijmans",
+            "Natasha Jaques",
+            "Cassie Tarakajian",
+            "Cheng-Zhi Anna Huang"
+          ],
+          "summary": "Recent advances in generative artificial intelligence (AI) have created\nmodels capable of high-quality musical content generation. However, little\nconsideration is given to how to use these models for real-time or cooperative\njamming musical applications because of crucial required features: low latency,\nthe ability to communicate planned actions, and the ability to adapt to user\ninput in real-time. To support these needs, we introduce ReaLJam, an interface\nand protocol for live musical jamming sessions between a human and a\nTransformer-based AI agent trained with reinforcement learning. We enable\nreal-time interactions using the concept of anticipation, where the agent\ncontinually predicts how the performance will unfold and visually conveys its\nplan to the user. We conduct a user study where experienced musicians jam in\nreal-time with the agent through ReaLJam. Our results demonstrate that ReaLJam\nenables enjoyable and musically interesting sessions, and we uncover important\ntakeaways for future work.",
+          "published_at": "2025-02-28T17:42:58+00:00",
+          "url": "http://arxiv.org/abs/2502.21267v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21267v1",
+          "categories": [
+            "cs.HC",
+            "cs.AI"
+          ]
+        },
+        {
+          "title": "Token-level Ensembling of Models with Different Vocabularies",
+          "authors": [
+            "Rachel Wicks",
+            "Kartik Ravisankar",
+            "Xinchen Yang",
+            "Philipp Koehn",
+            "Matt Post"
+          ],
+          "summary": "Model ensembling is a technique to combine the predicted distributions of two\nor more models, often leading to improved robustness and performance. For\nensembling in text generation, the next token's probability distribution is\nderived from a weighted sum of the distributions of each individual model. This\nrequires the underlying models to share the same subword vocabulary, limiting\nthe applicability of ensembling, since many open-sourced models have distinct\nvocabularies. In research settings, experimentation or upgrades to vocabularies\nmay introduce multiple vocabulary sizes. This paper proposes an inference-time\nonly algorithm that allows for ensembling models with different vocabularies,\nwithout the need to learn additional parameters or alter the underlying models.\nInstead, the algorithm ensures that tokens generated by the ensembled models\n\\textit{agree} in their surface form. We apply this technique to combinations\nof traditional encoder-decoder models and decoder-only LLMs and evaluate on\nmachine translation. In addition to expanding to model pairs that were\npreviously incapable of token-level ensembling, our algorithm frequently\nimproves translation performance over either model individually.",
+          "published_at": "2025-02-28T17:41:27+00:00",
+          "url": "http://arxiv.org/abs/2502.21265v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21265v1",
+          "categories": [
+            "cs.CL"
+          ]
+        },
+        {
+          "title": "Foundation Models -- A Panacea for Artificial Intelligence in Pathology?",
+          "authors": [
+            "Nita Mulliqi",
+            "Anders Blilie",
+            "Xiaoyi Ji",
+            "Kelvin Szolnoky",
+            "Henrik Olsson",
+            "Sol Erika Boman",
+            "Matteo Titus",
+            "Geraldine Martinez Gonzalez",
+            "Julia Anna Mielcarz",
+            "Masi Valkonen",
+            "Einar Gudlaugsson",
+            "Svein R. Kjosavik",
+            "José Asenjo",
+            "Marcello Gambacorta",
+            "Paolo Libretti",
+            "Marcin Braun",
+            "Radzislaw Kordek",
+            "Roman Łowicki",
+            "Kristina Hotakainen",
+            "Päivi Väre",
+            "Bodil Ginnerup Pedersen",
+            "Karina Dalsgaard Sørensen",
+            "Benedicte Parm Ulhøi",
+            "Pekka Ruusuvuori",
+            "Brett Delahunt",
+            "Hemamali Samaratunga",
+            "Toyonori Tsuzuki",
+            "Emilius A. M. Janssen",
+            "Lars Egevad",
+            "Martin Eklund",
+            "Kimmo Kartasalo"
+          ],
+          "summary": "The role of artificial intelligence (AI) in pathology has evolved from aiding\ndiagnostics to uncovering predictive morphological patterns in whole slide\nimages (WSIs). Recently, foundation models (FMs) leveraging self-supervised\npre-training have been widely advocated as a universal solution for diverse\ndownstream tasks. However, open questions remain about their clinical\napplicability and generalization advantages over end-to-end learning using\ntask-specific (TS) models. Here, we focused on AI with clinical-grade\nperformance for prostate cancer diagnosis and Gleason grading. We present the\nlargest validation of AI for this task, using over 100,000 core needle biopsies\nfrom 7,342 patients across 15 sites in 11 countries. We compared two FMs with a\nfully end-to-end TS model in a multiple instance learning framework. Our\nfindings challenge assumptions that FMs universally outperform TS models. While\nFMs demonstrated utility in data-scarce scenarios, their performance converged\nwith - and was in some cases surpassed by - TS models when sufficient labeled\ntraining data were available. Notably, extensive task-specific training\nmarkedly reduced clinically significant misgrading, misdiagnosis of challenging\nmorphologies, and variability across different WSI scanners. Additionally, FMs\nused up to 35 times more energy than the TS model, raising concerns about their\nsustainability. Our results underscore that while FMs offer clear advantages\nfor rapid prototyping and research, their role as a universal solution for\nclinically applicable medical AI remains uncertain. For high-stakes clinical\napplications, rigorous validation and consideration of task-specific training\nremain critically important. We advocate for integrating the strengths of FMs\nand end-to-end learning to achieve robust and resource-efficient AI pathology\nsolutions fit for clinical use.",
+          "published_at": "2025-02-28T17:40:45+00:00",
+          "url": "http://arxiv.org/abs/2502.21264v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21264v1",
+          "categories": [
+            "cs.CV",
+            "cs.AI"
+          ]
+        },
+        {
+          "title": "RuCCoD: Towards Automated ICD Coding in Russian",
+          "authors": [
+            "Aleksandr Nesterov",
+            "Andrey Sakhovskiy",
+            "Ivan Sviridov",
+            "Airat Valiev",
+            "Vladimir Makharev",
+            "Petr Anokhin",
+            "Galina Zubkova",
+            "Elena Tutubalina"
+          ],
+          "summary": "This study investigates the feasibility of automating clinical coding in\nRussian, a language with limited biomedical resources. We present a new dataset\nfor ICD coding, which includes diagnosis fields from electronic health records\n(EHRs) annotated with over 10,000 entities and more than 1,500 unique ICD\ncodes. This dataset serves as a benchmark for several state-of-the-art models,\nincluding BERT, LLaMA with LoRA, and RAG, with additional experiments examining\ntransfer learning across domains (from PubMed abstracts to medical diagnosis)\nand terminologies (from UMLS concepts to ICD codes). We then apply the\nbest-performing model to label an in-house EHR dataset containing patient\nhistories from 2017 to 2021. Our experiments, conducted on a carefully curated\ntest set, demonstrate that training with the automated predicted codes leads to\na significant improvement in accuracy compared to manually annotated data from\nphysicians. We believe our findings offer valuable insights into the potential\nfor automating clinical coding in resource-limited languages like Russian,\nwhich could enhance clinical efficiency and data accuracy in these contexts.",
+          "published_at": "2025-02-28T17:40:24+00:00",
+          "url": "http://arxiv.org/abs/2502.21263v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21263v1",
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.DB"
+          ]
+        },
+        {
+          "title": "Modeling Human Beliefs about AI Behavior for Scalable Oversight",
+          "authors": [
+            "Leon Lang",
+            "Patrick Forré"
+          ],
+          "summary": "Contemporary work in AI alignment often relies on human feedback to teach AI\nsystems human preferences and values. Yet as AI systems grow more capable,\nhuman feedback becomes increasingly unreliable. This raises the problem of\nscalable oversight: How can we supervise AI systems that exceed human\ncapabilities? In this work, we propose to model the human evaluator's beliefs\nabout the AI system's behavior to better interpret the human's feedback. We\nformalize human belief models and theoretically analyze their role in inferring\nhuman values. We then characterize the remaining ambiguity in this inference\nand conditions for which the ambiguity disappears. To mitigate reliance on\nexact belief models, we then introduce the relaxation of human belief model\ncovering. Finally, we propose using foundation models to construct covering\nbelief models, providing a new potential approach to scalable oversight.",
+          "published_at": "2025-02-28T17:39:55+00:00",
+          "url": "http://arxiv.org/abs/2502.21262v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21262v1",
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ]
+        },
+        {
+          "title": "RoboBrain: A Unified Brain Model for Robotic Manipulation from Abstract to Concrete",
+          "authors": [
+            "Yuheng Ji",
+            "Huajie Tan",
+            "Jiayu Shi",
+            "Xiaoshuai Hao",
+            "Yuan Zhang",
+            "Hengyuan Zhang",
+            "Pengwei Wang",
+            "Mengdi Zhao",
+            "Yao Mu",
+            "Pengju An",
+            "Xinda Xue",
+            "Qinghang Su",
+            "Huaihai Lyu",
+            "Xiaolong Zheng",
+            "Jiaming Liu",
+            "Zhongyuan Wang",
+            "Shanghang Zhang"
+          ],
+          "summary": "Recent advancements in Multimodal Large Language Models (MLLMs) have shown\nremarkable capabilities across various multimodal contexts. However, their\napplication in robotic scenarios, particularly for long-horizon manipulation\ntasks, reveals significant limitations. These limitations arise from the\ncurrent MLLMs lacking three essential robotic brain capabilities: Planning\nCapability, which involves decomposing complex manipulation instructions into\nmanageable sub-tasks; Affordance Perception, the ability to recognize and\ninterpret the affordances of interactive objects; and Trajectory Prediction,\nthe foresight to anticipate the complete manipulation trajectory necessary for\nsuccessful execution. To enhance the robotic brain's core capabilities from\nabstract to concrete, we introduce ShareRobot, a high-quality heterogeneous\ndataset that labels multi-dimensional information such as task planning, object\naffordance, and end-effector trajectory. ShareRobot's diversity and accuracy\nhave been meticulously refined by three human annotators. Building on this\ndataset, we developed RoboBrain, an MLLM-based model that combines robotic and\ngeneral multi-modal data, utilizes a multi-stage training strategy, and\nincorporates long videos and high-resolution images to improve its robotic\nmanipulation capabilities. Extensive experiments demonstrate that RoboBrain\nachieves state-of-the-art performance across various robotic tasks,\nhighlighting its potential to advance robotic brain capabilities.",
+          "published_at": "2025-02-28T17:30:39+00:00",
+          "url": "http://arxiv.org/abs/2502.21257v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21257v1",
+          "categories": [
+            "cs.RO",
+            "cs.CV"
+          ]
+        },
+        {
+          "title": "ALVI Interface: Towards Full Hand Motion Decoding for Amputees Using sEMG",
+          "authors": [
+            "Aleksandr Kovalev",
+            "Anna Makarova",
+            "Petr Chizhov",
+            "Matvey Antonov",
+            "Gleb Duplin",
+            "Vladislav Lomtev",
+            "Viacheslav Gostevskii",
+            "Vladimir Bessonov",
+            "Andrey Tsurkan",
+            "Mikhail Korobok",
+            "Aleksejs Timčenko"
+          ],
+          "summary": "We present a system for decoding hand movements using surface EMG signals.\nThe interface provides real-time (25 Hz) reconstruction of finger joint angles\nacross 20 degrees of freedom, designed for upper limb amputees. Our offline\nanalysis shows 0.8 correlation between predicted and actual hand movements. The\nsystem functions as an integrated pipeline with three key components: (1) a\nVR-based data collection platform, (2) a transformer-based model for\nEMG-to-motion transformation, and (3) a real-time calibration and feedback\nmodule called ALVI Interface. Using eight sEMG sensors and a VR training\nenvironment, users can control their virtual hand down to finger joint movement\nprecision, as demonstrated in our video: youtube link.",
+          "published_at": "2025-02-28T17:29:35+00:00",
+          "url": "http://arxiv.org/abs/2502.21256v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21256v1",
+          "categories": [
+            "cs.LG",
+            "q-bio.NC"
+          ]
+        },
+        {
+          "title": "Towards Developing Ethical Reasoners: Integrating Probabilistic Reasoning and Decision-Making for Complex AI Systems",
+          "authors": [
+            "Nijesh Upreti",
+            "Jessica Ciupa",
+            "Vaishak Belle"
+          ],
+          "summary": "A computational ethics framework is essential for AI and autonomous systems\noperating in complex, real-world environments. Existing approaches often lack\nthe adaptability needed to integrate ethical principles into dynamic and\nambiguous contexts, limiting their effectiveness across diverse scenarios. To\naddress these challenges, we outline the necessary ingredients for building a\nholistic, meta-level framework that combines intermediate representations,\nprobabilistic reasoning, and knowledge representation. The specifications\ntherein emphasize scalability, supporting ethical reasoning at both individual\ndecision-making levels and within the collective dynamics of multi-agent\nsystems. By integrating theoretical principles with contextual factors, it\nfacilitates structured and context-aware decision-making, ensuring alignment\nwith overarching ethical standards. We further explore proposed theorems\noutlining how ethical reasoners should operate, offering a foundation for\npractical implementation. These constructs aim to support the development of\nrobust and ethically reliable AI systems capable of navigating the complexities\nof real-world moral decision-making scenarios.",
+          "published_at": "2025-02-28T17:25:11+00:00",
+          "url": "http://arxiv.org/abs/2502.21250v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21250v1",
+          "categories": [
+            "cs.AI"
+          ]
+        },
+        {
+          "title": "TimesBERT: A BERT-Style Foundation Model for Time Series Understanding",
+          "authors": [
+            "Haoran Zhang",
+            "Yong Liu",
+            "Yunzhong Qiu",
+            "Haixuan Liu",
+            "Zhongyi Pei",
+            "Jianmin Wang",
+            "Mingsheng Long"
+          ],
+          "summary": "Time series analysis is crucial in diverse scenarios. Beyond forecasting,\nconsiderable real-world tasks are categorized into classification, imputation,\nand anomaly detection, underscoring different capabilities termed time series\nunderstanding in this paper. While GPT-style models have been positioned as\nfoundation models for time series forecasting, the BERT-style architecture,\nwhich has made significant advances in natural language understanding, has not\nbeen fully unlocked for time series understanding, possibly attributed to the\nundesirable dropout of essential elements of BERT. In this paper, inspired by\nthe shared multi-granularity structure between multivariate time series and\nmultisentence documents, we design TimesBERT to learn generic representations\nof time series including temporal patterns and variate-centric characteristics.\nIn addition to a natural adaptation of masked modeling, we propose a parallel\ntask of functional token prediction to embody vital multi-granularity\nstructures. Our model is pre-trained on 260 billion time points across diverse\ndomains. Leveraging multi-granularity representations, TimesBERT achieves\nstate-of-the-art performance across four typical downstream understanding\ntasks, outperforming task-specific models and language pre-trained backbones,\npositioning it as a versatile foundation model for time series understanding.",
+          "published_at": "2025-02-28T17:14:44+00:00",
+          "url": "http://arxiv.org/abs/2502.21245v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21245v1",
+          "categories": [
+            "cs.LG"
+          ]
+        },
+        {
+          "title": "Anatomically-guided masked autoencoder pre-training for aneurysm detection",
+          "authors": [
+            "Alberto Mario Ceballos-Arroyo",
+            "Jisoo Kim",
+            "Chu-Hsuan Lin",
+            "Lei Qin",
+            "Geoffrey S. Young",
+            "Huaizu Jiang"
+          ],
+          "summary": "Intracranial aneurysms are a major cause of morbidity and mortality\nworldwide, and detecting them manually is a complex, time-consuming task.\nAlbeit automated solutions are desirable, the limited availability of training\ndata makes it difficult to develop such solutions using typical supervised\nlearning frameworks. In this work, we propose a novel pre-training strategy\nusing more widely available unannotated head CT scan data to pre-train a 3D\nVision Transformer model prior to fine-tuning for the aneurysm detection task.\nSpecifically, we modify masked auto-encoder (MAE) pre-training in the following\nways: we use a factorized self-attention mechanism to make 3D attention\ncomputationally viable, we restrict the masked patches to areas near arteries\nto focus on areas where aneurysms are likely to occur, and we reconstruct not\nonly CT scan intensity values but also artery distance maps, which describe the\ndistance between each voxel and the closest artery, thereby enhancing the\nbackbone's learned representations. Compared with SOTA aneurysm detection\nmodels, our approach gains +4-8% absolute Sensitivity at a false positive rate\nof 0.5. Code and weights will be released.",
+          "published_at": "2025-02-28T17:13:58+00:00",
+          "url": "http://arxiv.org/abs/2502.21244v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21244v1",
+          "categories": [
+            "cs.CV"
+          ]
+        },
+        {
+          "title": "Towards long-term player tracking with graph hierarchies and domain-specific features",
+          "authors": [
+            "Maria Koshkina",
+            "James H. Elder"
+          ],
+          "summary": "In team sports analytics, long-term player tracking remains a challenging\ntask due to player appearance similarity, occlusion, and dynamic motion\npatterns. Accurately re-identifying players and reconnecting tracklets after\nextended absences from the field of view or prolonged occlusions is crucial for\nrobust analysis. We introduce SportsSUSHI, a hierarchical graph-based approach\nthat leverages domain-specific features, including jersey numbers, team IDs,\nand field coordinates, to enhance tracking accuracy. SportsSUSHI achieves high\nperformance on the SoccerNet dataset and a newly proposed hockey tracking\ndataset. Our hockey dataset, recorded using a stationary camera capturing the\nentire playing surface, contains long sequences and annotations for team IDs\nand jersey numbers, making it well-suited for evaluating long-term tracking\ncapabilities. The inclusion of domain-specific features in our approach\nsignificantly improves association accuracy, as demonstrated in our\nexperiments. The dataset and code are available at\nhttps://github.com/mkoshkina/sports-SUSHI.",
+          "published_at": "2025-02-28T17:12:40+00:00",
+          "url": "http://arxiv.org/abs/2502.21242v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21242v1",
+          "categories": [
+            "cs.CV"
+          ]
+        },
+        {
+          "title": "The Structural Complexity of Matrix-Vector Multiplication",
+          "authors": [
+            "Emile Anand",
+            "Jan van den Brand",
+            "Rose McCarty"
+          ],
+          "summary": "We consider the problem of preprocessing an $n\\times n$ matrix M, and\nsupporting queries that, for any vector v, returns the matrix-vector product\nMv. This problem has been extensively studied in both theory and practice: on\none side, practitioners have developed algorithms that are highly efficient in\npractice, whereas theoreticians have proven that the problem cannot be solved\nfaster than naive multiplication in the worst-case. This lower bound holds even\nin the average-case, implying that existing average-case analyses cannot\nexplain this gap between theory and practice. Therefore, we study the problem\nfor structured matrices. We show that for $n\\times n$ matrices of VC-dimension\nd, the matrix-vector multiplication problem can be solved with $\\tilde{O}(n^2)$\npreprocessing and $\\tilde O(n^{2-1/d})$ query time. Given the low constant\nVC-dimensions observed in most real-world data, our results posit an\nexplanation for why the problem can be solved so much faster in practice.\nMoreover, our bounds hold even if the matrix does not have a low VC-dimension,\nbut is obtained by (possibly adversarially) corrupting at most a subquadratic\nnumber of entries of any unknown low VC-dimension matrix. Our results yield the\nfirst non-trivial upper bounds for many applications. In previous works, the\nonline matrix-vector hypothesis (conjecturing that quadratic time is needed per\nquery) was used to prove many conditional lower bounds, showing that it is\nimpossible to compute and maintain high-accuracy estimates for shortest paths,\nLaplacian solvers, effective resistance, and triangle detection in graphs\nsubject to node insertions and deletions in subquadratic time. Yet, via a\nreduction to our matrix-vector-multiplication result, we show we can maintain\nthe aforementioned problems efficiently if the input is structured, providing\nthe first subquadratic upper bounds in the high-accuracy regime.",
+          "published_at": "2025-02-28T17:11:36+00:00",
+          "url": "http://arxiv.org/abs/2502.21240v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21240v1",
+          "categories": [
+            "cs.DS",
+            "cs.CC",
+            "cs.CG",
+            "cs.LG",
+            "65F05",
+            "F.2.1"
+          ]
+        },
+        {
+          "title": "Semantic Volume: Quantifying and Detecting both External and Internal Uncertainty in LLMs",
+          "authors": [
+            "Xiaomin Li",
+            "Zhou Yu",
+            "Ziji Zhang",
+            "Yingying Zhuang",
+            "Swair Shah",
+            "Anurag Beniwal"
+          ],
+          "summary": "Large language models (LLMs) have demonstrated remarkable performance across\ndiverse tasks by encoding vast amounts of factual knowledge. However, they are\nstill prone to hallucinations, generating incorrect or misleading information,\noften accompanied by high uncertainty. Existing methods for hallucination\ndetection primarily focus on quantifying internal uncertainty, which arises\nfrom missing or conflicting knowledge within the model. However, hallucinations\ncan also stem from external uncertainty, where ambiguous user queries lead to\nmultiple possible interpretations. In this work, we introduce Semantic Volume,\na novel mathematical measure for quantifying both external and internal\nuncertainty in LLMs. Our approach perturbs queries and responses, embeds them\nin a semantic space, and computes the determinant of the Gram matrix of the\nembedding vectors, capturing their dispersion as a measure of uncertainty. Our\nframework provides a generalizable and unsupervised uncertainty detection\nmethod without requiring white-box access to LLMs. We conduct extensive\nexperiments on both external and internal uncertainty detection, demonstrating\nthat our Semantic Volume method consistently outperforms existing baselines in\nboth tasks. Additionally, we provide theoretical insights linking our measure\nto differential entropy, unifying and extending previous sampling-based\nuncertainty measures such as the semantic entropy. Semantic Volume is shown to\nbe a robust and interpretable approach to improving the reliability of LLMs by\nsystematically detecting uncertainty in both user queries and model responses.",
+          "published_at": "2025-02-28T17:09:08+00:00",
+          "url": "http://arxiv.org/abs/2502.21239v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21239v1",
+          "categories": [
+            "cs.CL"
+          ]
+        },
+        {
+          "title": "Transforming Tuberculosis Care: Optimizing Large Language Models For Enhanced Clinician-Patient Communication",
+          "authors": [
+            "Daniil Filienko",
+            "Mahek Nizar",
+            "Javier Roberti",
+            "Denise Galdamez",
+            "Haroon Jakher",
+            "Sarah Iribarren",
+            "Weichao Yuwen",
+            "Martine De Cock"
+          ],
+          "summary": "Tuberculosis (TB) is the leading cause of death from an infectious disease\nglobally, with the highest burden in low- and middle-income countries. In these\nregions, limited healthcare access and high patient-to-provider ratios impede\neffective patient support, communication, and treatment completion. To bridge\nthis gap, we propose integrating a specialized Large Language Model into an\nefficacious digital adherence technology to augment interactive communication\nwith treatment supporters. This AI-powered approach, operating within a\nhuman-in-the-loop framework, aims to enhance patient engagement and improve TB\ntreatment outcomes.",
+          "published_at": "2025-02-28T17:05:13+00:00",
+          "url": "http://arxiv.org/abs/2502.21236v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21236v1",
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.HC"
+          ]
+        },
+        {
+          "title": "ByteScale: Efficient Scaling of LLM Training with a 2048K Context Length on More Than 12,000 GPUs",
+          "authors": [
+            "Hao Ge",
+            "Junda Feng",
+            "Qi Huang",
+            "Fangcheng Fu",
+            "Xiaonan Nie",
+            "Lei Zuo",
+            "Haibin Lin",
+            "Bin Cui",
+            "Xin Liu"
+          ],
+          "summary": "Scaling long-context ability is essential for Large Language Models (LLMs).\nTo amortize the memory consumption across multiple devices in long-context\ntraining, inter-data partitioning (a.k.a. Data Parallelism) and intra-data\npartitioning (a.k.a. Context Parallelism) are commonly used. Current training\nframeworks predominantly treat the two techniques as orthogonal, and establish\nstatic communication groups to organize the devices as a static mesh (e.g., a\n2D mesh). However, the sequences for LLM training typically vary in lengths, no\nmatter for texts, multi-modalities or reinforcement learning. The mismatch\nbetween data heterogeneity and static mesh causes redundant communication and\nimbalanced computation, degrading the training efficiency.\n  In this work, we introduce ByteScale, an efficient, flexible, and scalable\nLLM training framework for large-scale mixed training of long and short\nsequences. The core of ByteScale is a novel parallelism strategy, namely Hybrid\nData Parallelism (HDP), which unifies the inter- and intra-data partitioning\nwith a dynamic mesh design. In particular, we build a communication optimizer,\nwhich eliminates the redundant communication for short sequences by data-aware\nsharding and dynamic communication, and further compresses the communication\ncost for long sequences by selective offloading. Besides, we also develop a\nbalance scheduler to mitigate the imbalanced computation by parallelism-aware\ndata assignment. We evaluate ByteScale with the model sizes ranging from 7B to\n141B, context lengths from 256K to 2048K, on a production cluster with more\nthan 12,000 GPUs. Experiment results show that ByteScale outperforms the\nstate-of-the-art training system by up to 7.89x.",
+          "published_at": "2025-02-28T17:01:03+00:00",
+          "url": "http://arxiv.org/abs/2502.21231v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21231v1",
+          "categories": [
+            "cs.DC",
+            "cs.AI",
+            "cs.LG"
+          ]
+        },
+        {
+          "title": "A Method of Selective Attention for Reservoir Based Agents",
+          "authors": [
+            "Kevin McKee"
+          ],
+          "summary": "Training of deep reinforcement learning agents is slowed considerably by the\npresence of input dimensions that do not usefully condition the reward\nfunction. Existing modules such as layer normalization can be trained with\nweight decay to act as a form of selective attention, i.e. an input mask, that\nshrinks the scale of unnecessary inputs, which in turn accelerates training of\nthe policy. However, we find a surprising result that adding numerous\nparameters to the computation of the input mask results in much faster\ntraining. A simple, high dimensional masking module is compared with layer\nnormalization and a model without any input suppression. The high dimensional\nmask resulted in a four-fold speedup in training over the null hypothesis and a\ntwo-fold speedup in training over the layer normalization method.",
+          "published_at": "2025-02-28T17:00:19+00:00",
+          "url": "http://arxiv.org/abs/2502.21229v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21229v1",
+          "categories": [
+            "cs.LG"
+          ]
+        },
+        {
+          "title": "ECLeKTic: a Novel Challenge Set for Evaluation of Cross-Lingual Knowledge Transfer",
+          "authors": [
+            "Omer Goldman",
+            "Uri Shaham",
+            "Dan Malkin",
+            "Sivan Eiger",
+            "Avinatan Hassidim",
+            "Yossi Matias",
+            "Joshua Maynez",
+            "Adi Mayrav Gilady",
+            "Jason Riesa",
+            "Shruti Rijhwani",
+            "Laura Rimell",
+            "Idan Szpektor",
+            "Reut Tsarfaty",
+            "Matan Eyal"
+          ],
+          "summary": "To achieve equitable performance across languages, multilingual large\nlanguage models (LLMs) must be able to abstract knowledge beyond the language\nin which it was acquired. However, the current literature lacks reliable ways\nto measure LLMs' capability of cross-lingual knowledge transfer. To that end,\nwe present ECLeKTic, a multilingual closed-book QA (CBQA) dataset that\nEvaluates Cross-Lingual Knowledge Transfer in a simple, black-box manner. We\ndetected information with uneven coverage across languages by controlling for\npresence and absence of Wikipedia articles in 12 languages. We generated\nknowledge-seeking questions in a source language, for which the answer appears\nin a relevant Wikipedia article and translated them to all other 11 languages,\nfor which the respective Wikipedias lack equivalent articles. Assuming that\nWikipedia reflects the prominent knowledge in the LLM's training data, to solve\nECLeKTic's CBQA task the model is required to transfer knowledge between\nlanguages. Experimenting with 8 LLMs, we show that SOTA models struggle to\neffectively share knowledge across, languages even if they can predict the\nanswer well for queries in the same language the knowledge was acquired in.",
+          "published_at": "2025-02-28T16:59:30+00:00",
+          "url": "http://arxiv.org/abs/2502.21228v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21228v1",
+          "categories": [
+            "cs.CL",
+            "cs.AI"
+          ]
+        },
+        {
+          "title": "Detecting Linguistic Diversity on Social Media",
+          "authors": [
+            "Sidney Wong",
+            "Benjamin Adams",
+            "Jonathan Dunn"
+          ],
+          "summary": "This chapter explores the efficacy of using social media data to examine\nchanging linguistic behaviour of a place. We focus our investigation on\nAotearoa New Zealand where official statistics from the census is the only\nsource of language use data. We use published census data as the ground truth\nand the social media sub-corpus from the Corpus of Global Language Use as our\nalternative data source. We use place as the common denominator between the two\ndata sources. We identify the language conditions of each tweet in the social\nmedia data set and validated our results with two language identification\nmodels. We then compare levels of linguistic diversity at national, regional,\nand local geographies. The results suggest that social media language data has\nthe possibility to provide a rich source of spatial and temporal insights on\nthe linguistic profile of a place. We show that social media is sensitive to\ndemographic and sociopolitical changes within a language and at low-level\nregional and local geographies.",
+          "published_at": "2025-02-28T16:56:34+00:00",
+          "url": "http://arxiv.org/abs/2502.21224v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21224v1",
+          "categories": [
+            "cs.CL"
+          ]
+        },
+        {
+          "title": "XAIxArts Manifesto: Explainable AI for the Arts",
+          "authors": [
+            "Nick Bryan-Kinns",
+            "Shuoyang Jasper Zheng",
+            "Francisco Castro",
+            "Makayla Lewis",
+            "Jia-Rey Chang",
+            "Gabriel Vigliensoni",
+            "Terence Broad",
+            "Michael Clemens",
+            "Elizabeth Wilson"
+          ],
+          "summary": "Explainable AI (XAI) is concerned with how to make AI models more\nunderstandable to people. To date these explanations have predominantly been\ntechnocentric - mechanistic or productivity oriented. This paper introduces the\nExplainable AI for the Arts (XAIxArts) manifesto to provoke new ways of\nthinking about explainability and AI beyond technocentric discourses.\nManifestos offer a means to communicate ideas, amplify unheard voices, and\nfoster reflection on practice. To supports the co-creation and revision of the\nXAIxArts manifesto we combine a World Caf\\'e style discussion format with a\nliving manifesto to question four core themes: 1) Empowerment, Inclusion, and\nFairness; 2) Valuing Artistic Practice; 3) Hacking and Glitches; and 4)\nOpenness. Through our interactive living manifesto experience we invite\nparticipants to actively engage in shaping this XIAxArts vision within the CHI\ncommunity and beyond.",
+          "published_at": "2025-02-28T16:50:17+00:00",
+          "url": "http://arxiv.org/abs/2502.21220v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21220v1",
+          "categories": [
+            "cs.HC",
+            "cs.AI"
+          ]
+        },
+        {
+          "title": "An Algebraic Framework for Hierarchical Probabilistic Abstraction",
+          "authors": [
+            "Nijesh Upreti",
+            "Vaishak Belle"
+          ],
+          "summary": "Abstraction is essential for reducing the complexity of systems across\ndiverse fields, yet designing effective abstraction methodology for\nprobabilistic models is inherently challenging due to stochastic behaviors and\nuncertainties. Current approaches often distill detailed probabilistic data\ninto higher-level summaries to support tractable and interpretable analyses,\nthough they typically struggle to fully represent the relational and\nprobabilistic hierarchies through single-layered abstractions. We introduce a\nhierarchical probabilistic abstraction framework aimed at addressing these\nchallenges by extending a measure-theoretic foundation for hierarchical\nabstraction. The framework enables modular problem-solving via layered\nmappings, facilitating both detailed layer-specific analysis and a cohesive\nsystem-wide understanding. This approach bridges high-level conceptualization\nwith low-level perceptual data, enhancing interpretability and allowing layered\nanalysis. Our framework provides a robust foundation for abstraction analysis\nacross AI subfields, particularly in aligning System 1 and System 2 thinking,\nthereby supporting the development of diverse abstraction methodologies.",
+          "published_at": "2025-02-28T16:47:42+00:00",
+          "url": "http://arxiv.org/abs/2502.21216v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21216v1",
+          "categories": [
+            "cs.AI"
+          ]
+        },
+        {
+          "title": "Transformers Learn to Implement Multi-step Gradient Descent with Chain of Thought",
+          "authors": [
+            "Jianhao Huang",
+            "Zixuan Wang",
+            "Jason D. Lee"
+          ],
+          "summary": "Chain of Thought (CoT) prompting has been shown to significantly improve the\nperformance of large language models (LLMs), particularly in arithmetic and\nreasoning tasks, by instructing the model to produce intermediate reasoning\nsteps. Despite the remarkable empirical success of CoT and its theoretical\nadvantages in enhancing expressivity, the mechanisms underlying CoT training\nremain largely unexplored. In this paper, we study the training dynamics of\ntransformers over a CoT objective on an in-context weight prediction task for\nlinear regression. We prove that while a one-layer linear transformer without\nCoT can only implement a single step of gradient descent (GD) and fails to\nrecover the ground-truth weight vector, a transformer with CoT prompting can\nlearn to perform multi-step GD autoregressively, achieving near-exact recovery.\nFurthermore, we show that the trained transformer effectively generalizes on\nthe unseen data. With our technique, we also show that looped transformers\nsignificantly improve final performance compared to transformers without\nlooping in the in-context learning of linear regression. Empirically, we\ndemonstrate that CoT prompting yields substantial performance improvements.",
+          "published_at": "2025-02-28T16:40:38+00:00",
+          "url": "http://arxiv.org/abs/2502.21212v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21212v1",
+          "categories": [
+            "cs.LG",
+            "cs.AI"
+          ]
+        },
+        {
+          "title": "ARIES: Autonomous Reasoning with LLMs on Interactive Thought Graph Environments",
+          "authors": [
+            "Pedro Gimenes",
+            "Zeyu Cao",
+            "Jeffrey Wong",
+            "Yiren Zhao"
+          ],
+          "summary": "Recent research has shown that LLM performance on reasoning tasks can be\nenhanced by scaling test-time compute. One promising approach, particularly\nwith decomposable problems, involves arranging intermediate solutions as a\ngraph on which transformations are performed to explore the solution space.\nHowever, prior works rely on pre-determined, task-specific transformation\nschedules which are subject to a set of searched hyperparameters. In this work,\nwe view thought graph transformations as actions in a Markov decision process,\nand implement policy agents to drive effective action policies for the\nunderlying reasoning LLM agent. In particular, we investigate the ability for\nanother LLM to act as a policy agent on thought graph environments and\nintroduce ARIES, a multi-agent architecture for reasoning with LLMs. In ARIES,\nreasoning LLM agents solve decomposed subproblems, while policy LLM agents\nmaintain visibility of the thought graph states, and dynamically adapt the\nproblem-solving strategy. Through extensive experiments, we observe that using\noff-the-shelf LLMs as policy agents with no supervised fine-tuning (SFT) can\nyield up to $29\\%$ higher accuracy on HumanEval relative to static\ntransformation schedules, as well as reducing inference costs by $35\\%$ and\navoid any search requirements. We also conduct a thorough analysis of observed\nfailure modes, highlighting that limitations on LLM sizes and the depth of\nproblem decomposition can be seen as challenges to scaling LLM-guided\nreasoning.",
+          "published_at": "2025-02-28T16:28:13+00:00",
+          "url": "http://arxiv.org/abs/2502.21208v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21208v1",
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ]
+        },
+        {
+          "title": "The PanAf-FGBG Dataset: Understanding the Impact of Backgrounds in Wildlife Behaviour Recognition",
+          "authors": [
+            "Otto Brookes",
+            "Maksim Kukushkin",
+            "Majid Mirmehdi",
+            "Colleen Stephens",
+            "Paula Dieguez",
+            "Thurston C. Hicks",
+            "Sorrel Jones",
+            "Kevin Lee",
+            "Maureen S. McCarthy",
+            "Amelia Meier",
+            "Emmanuelle Normand",
+            "Erin G. Wessling",
+            "Roman M. Wittig",
+            "Kevin Langergraber",
+            "Klaus Zuberbühler",
+            "Lukas Boesch",
+            "Thomas Schmid",
+            "Mimi Arandjelovic",
+            "Hjalmar Kühl",
+            "Tilo Burghardt"
+          ],
+          "summary": "Computer vision analysis of camera trap video footage is essential for\nwildlife conservation, as captured behaviours offer some of the earliest\nindicators of changes in population health. Recently, several high-impact\nanimal behaviour datasets and methods have been introduced to encourage their\nuse; however, the role of behaviour-correlated background information and its\nsignificant effect on out-of-distribution generalisation remain unexplored. In\nresponse, we present the PanAf-FGBG dataset, featuring 20 hours of wild\nchimpanzee behaviours, recorded at over 350 individual camera locations.\nUniquely, it pairs every video with a chimpanzee (referred to as a foreground\nvideo) with a corresponding background video (with no chimpanzee) from the same\ncamera location. We present two views of the dataset: one with overlapping\ncamera locations and one with disjoint locations. This setup enables, for the\nfirst time, direct evaluation of in-distribution and out-of-distribution\nconditions, and for the impact of backgrounds on behaviour recognition models\nto be quantified. All clips come with rich behavioural annotations and metadata\nincluding unique camera IDs and detailed textual scene descriptions.\nAdditionally, we establish several baselines and present a highly effective\nlatent-space normalisation technique that boosts out-of-distribution\nperformance by +5.42% mAP for convolutional and +3.75% mAP for\ntransformer-based models. Finally, we provide an in-depth analysis on the role\nof backgrounds in out-of-distribution behaviour recognition, including the so\nfar unexplored impact of background durations (i.e., the count of background\nframes within foreground videos).",
+          "published_at": "2025-02-28T16:18:57+00:00",
+          "url": "http://arxiv.org/abs/2502.21201v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21201v1",
+          "categories": [
+            "cs.CV",
+            "cs.AI"
+          ]
+        },
+        {
+          "title": "AMPLE: Event-Driven Accelerator for Mixed-Precision Inference of Graph Neural Networks",
+          "authors": [
+            "Pedro Gimenes",
+            "Yiren Zhao",
+            "George Constantinides"
+          ],
+          "summary": "Graph Neural Networks (GNNs) have recently gained attention due to their\nperformance on non-Euclidean data. The use of custom hardware architectures\nproves particularly beneficial for GNNs due to their irregular memory access\npatterns, resulting from the sparse structure of graphs. However, existing FPGA\naccelerators are limited by their double buffering mechanism, which doesn't\naccount for the irregular node distribution in typical graph datasets. To\naddress this, we introduce \\textbf{AMPLE} (Accelerated Message Passing Logic\nEngine), an FPGA accelerator leveraging a new event-driven programming flow. We\ndevelop a mixed-arithmetic architecture, enabling GNN inference to be quantized\nat a node-level granularity. Finally, prefetcher for data and instructions is\nimplemented to optimize off-chip memory access and maximize node parallelism.\nEvaluation on citation and social media graph datasets ranging from $2$K to\n$700$K nodes showed a mean speedup of $243\\times$ and $7.2\\times$ against CPU\nand GPU counterparts, respectively.",
+          "published_at": "2025-02-28T16:14:16+00:00",
+          "url": "http://arxiv.org/abs/2502.21196v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21196v1",
+          "categories": [
+            "cs.AR",
+            "cs.AI",
+            "cs.LG"
+          ]
+        },
+        {
+          "title": "Class prior estimation for positive-unlabeled learning when label shift occurs",
+          "authors": [
+            "Jan Mielniczuk",
+            "Wojciech Rejchel",
+            "Paweł Teisseyre"
+          ],
+          "summary": "We study estimation of class prior for unlabeled target samples which is\npossibly different from that of source population. It is assumed that for the\nsource data only samples from positive class and from the whole population are\navailable (PU learning scenario). We introduce a novel direct estimator of\nclass prior which avoids estimation of posterior probabilities and has a simple\ngeometric interpretation. It is based on a distribution matching technique\ntogether with kernel embedding and is obtained as an explicit solution to an\noptimisation task. We establish its asymptotic consistency as well as a\nnon-asymptotic bound on its deviation from the unknown prior, which is\ncalculable in practice. We study finite sample behaviour for synthetic and real\ndata and show that the proposal, together with a suitably modified version for\nlarge values of source prior, works on par or better than its competitors.",
+          "published_at": "2025-02-28T16:12:53+00:00",
+          "url": "http://arxiv.org/abs/2502.21194v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21194v1",
+          "categories": [
+            "stat.ML",
+            "cs.LG"
+          ]
+        },
+        {
+          "title": "Towards High-performance Spiking Transformers from ANN to SNN Conversion",
+          "authors": [
+            "Zihan Huang",
+            "Xinyu Shi",
+            "Zecheng Hao",
+            "Tong Bu",
+            "Jianhao Ding",
+            "Zhaofei Yu",
+            "Tiejun Huang"
+          ],
+          "summary": "Spiking neural networks (SNNs) show great potential due to their energy\nefficiency, fast processing capabilities, and robustness. There are two main\napproaches to constructing SNNs. Direct training methods require much memory,\nwhile conversion methods offer a simpler and more efficient option. However,\ncurrent conversion methods mainly focus on converting convolutional neural\nnetworks (CNNs) to SNNs. Converting Transformers to SNN is challenging because\nof the presence of non-linear modules. In this paper, we propose an Expectation\nCompensation Module to preserve the accuracy of the conversion. The core idea\nis to use information from the previous T time-steps to calculate the expected\noutput at time-step T. We also propose a Multi-Threshold Neuron and the\ncorresponding Parallel Parameter normalization to address the challenge of\nlarge time steps needed for high accuracy, aiming to reduce network latency and\npower consumption. Our experimental results demonstrate that our approach\nachieves state-of-the-art performance. For example, we achieve a top-1 accuracy\nof 88.60\\% with only a 1\\% loss in accuracy using 4 time steps while consuming\nonly 35\\% of the original power of the Transformer. To our knowledge, this is\nthe first successful Artificial Neural Network (ANN) to SNN conversion for\nSpiking Transformers that achieves high accuracy, low latency, and low power\nconsumption on complex datasets. The source codes of the proposed method are\navailable at https://github.com/h-z-h-cell/Transformer-to-SNN-ECMT.",
+          "published_at": "2025-02-28T16:12:37+00:00",
+          "url": "http://arxiv.org/abs/2502.21193v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21193v1",
+          "categories": [
+            "cs.CV"
+          ]
+        },
+        {
+          "title": "Geodesic Slice Sampler for Multimodal Distributions with Strong Curvature",
+          "authors": [
+            "Bernardo Williams",
+            "Hanlin Yu",
+            "Hoang Phuc Hau Luu",
+            "Georgios Arvanitidis",
+            "Arto Klami"
+          ],
+          "summary": "Traditional Markov Chain Monte Carlo sampling methods often struggle with\nsharp curvatures, intricate geometries, and multimodal distributions. Slice\nsampling can resolve local exploration inefficiency issues and Riemannian\ngeometries help with sharp curvatures. Recent extensions enable slice sampling\non Riemannian manifolds, but they are restricted to cases where geodesics are\navailable in closed form. We propose a method that generalizes Hit-and-Run\nslice sampling to more general geometries tailored to the target distribution,\nby approximating geodesics as solutions to differential equations. Our approach\nenables exploration of regions with strong curvature and rapid transitions\nbetween modes in multimodal distributions. We demonstrate the advantages of the\napproach over challenging sampling problems.",
+          "published_at": "2025-02-28T16:06:11+00:00",
+          "url": "http://arxiv.org/abs/2502.21190v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21190v1",
+          "categories": [
+            "cs.LG"
+          ]
+        },
+        {
+          "title": "SYN-LUNGS: Towards Simulating Lung Nodules with Anatomy-Informed Digital Twins for AI Training",
+          "authors": [
+            "Fakrul Islam Tushar",
+            "Lavsen Dahal",
+            "Cindy McCabe",
+            "Fong Chi Ho",
+            "Paul Segars",
+            "Ehsan Abadi",
+            "Kyle J. Lafata",
+            "Ehsan Samei",
+            "Joseph Y. Lo"
+          ],
+          "summary": "AI models for lung cancer screening are limited by data scarcity, impacting\ngeneralizability and clinical applicability. Generative models address this\nissue but are constrained by training data variability. We introduce SYN-LUNGS,\na framework for generating high-quality 3D CT images with detailed annotations.\nSYN-LUNGS integrates XCAT3 phantoms for digital twin generation, X-Lesions for\nnodule simulation (varying size, location, and appearance), and DukeSim for CT\nimage formation with vendor and parameter variability. The dataset includes\n3,072 nodule images from 1,044 simulated CT scans, with 512 lesions and 174\ndigital twins. Models trained on clinical + simulated data outperform clinical\nonly models, achieving 10% improvement in detection, 2-9% in segmentation and\nclassification, and enhanced synthesis.By incorporating anatomy-informed\nsimulations, SYN-LUNGS provides a scalable approach for AI model development,\nparticularly in rare disease representation and improving model reliability.",
+          "published_at": "2025-02-28T16:02:37+00:00",
+          "url": "http://arxiv.org/abs/2502.21187v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21187v1",
+          "categories": [
+            "cs.LG"
+          ]
+        },
+        {
+          "title": "Scalable Decision-Making in Stochastic Environments through Learned Temporal Abstraction",
+          "authors": [
+            "Baiting Luo",
+            "Ava Pettet",
+            "Aron Laszka",
+            "Abhishek Dubey",
+            "Ayan Mukhopadhyay"
+          ],
+          "summary": "Sequential decision-making in high-dimensional continuous action spaces,\nparticularly in stochastic environments, faces significant computational\nchallenges. We explore this challenge in the traditional offline RL setting,\nwhere an agent must learn how to make decisions based on data collected through\na stochastic behavior policy. We present \\textit{Latent Macro Action Planner}\n(L-MAP), which addresses this challenge by learning a set of temporally\nextended macro-actions through a state-conditional Vector Quantized Variational\nAutoencoder (VQ-VAE), effectively reducing action dimensionality. L-MAP employs\na (separate) learned prior model that acts as a latent transition model and\nallows efficient sampling of plausible actions. During planning, our approach\naccounts for stochasticity in both the environment and the behavior policy by\nusing Monte Carlo tree search (MCTS). In offline RL settings, including\nstochastic continuous control tasks, L-MAP efficiently searches over discrete\nlatent actions to yield high expected returns. Empirical results demonstrate\nthat L-MAP maintains low decision latency despite increased action\ndimensionality. Notably, across tasks ranging from continuous control with\ninherently stochastic dynamics to high-dimensional robotic hand manipulation,\nL-MAP significantly outperforms existing model-based methods and performs\non-par with strong model-free actor-critic baselines, highlighting the\neffectiveness of the proposed approach in planning in complex and stochastic\nenvironments with high-dimensional action spaces.",
+          "published_at": "2025-02-28T16:02:23+00:00",
+          "url": "http://arxiv.org/abs/2502.21186v1",
+          "pdf_url": "http://arxiv.org/pdf/2502.21186v1",
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.RO"
+          ]
+        }
+      ]
     },
-    "created_at": "2025-03-03T16:53:41.676613"
+    "created_at": "2025-03-03T17:55:52.848010",
+    "model": "Grok"
   }
 ]

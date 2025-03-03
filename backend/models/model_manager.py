@@ -25,7 +25,7 @@ def generate_summary(data):
         data: 包含新闻和论文的数据字典
         
     Returns:
-        生成的总结文本
+        元组 (生成的总结文本, 使用的模型名称)
     """
     logger.info("开始根据优先级选择模型生成总结")
     
@@ -54,7 +54,8 @@ def generate_summary(data):
                     continue
                     
                 logger.info("使用Grok模型生成总结")
-                return grok_generate_summary(data)
+                summary = grok_generate_summary(data)
+                return summary, "Grok"
                 
             elif model.lower() == "deepseek":
                 # 检查是否配置了DeepSeek API密钥
@@ -63,11 +64,12 @@ def generate_summary(data):
                     continue
                     
                 logger.info("使用DeepSeek模型生成总结")
-                return deepseek_generate_summary(data)
+                summary = deepseek_generate_summary(data)
+                return summary, "DeepSeek"
         except Exception as e:
             logger.error(f"使用{model}模型生成总结失败: {e}")
             continue
     
     # 如果所有模型都失败，返回错误信息
     logger.error("所有可用模型都无法生成总结")
-    return "无法生成总结：所有可用模型都失败了"
+    return "无法生成总结：所有可用模型都失败了", "None"

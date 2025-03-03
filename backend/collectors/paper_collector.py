@@ -18,7 +18,7 @@ def collect_arxiv_papers():
         search_query = 'cat:cs.AI OR cat:cs.CL OR cat:cs.CV OR cat:cs.LG OR cat:cs.NE'
         
         # 获取最近7天的论文
-        date_filter = datetime.now() - timedelta(days=7)
+        date_filter = datetime.now().replace(tzinfo=None) - timedelta(days=7)
         
         # 执行查询
         search = arxiv.Search(
@@ -29,20 +29,29 @@ def collect_arxiv_papers():
         )
         
         for result in search.results():
-            # 检查发布日期
-            if result.published > date_filter:
-                # 格式化论文数据
-                paper = {
-                    'title': result.title,
-                    'authors': [author.name for author in result.authors],
-                    'summary': result.summary,
-                    'published_at': result.published.isoformat(),
-                    'url': result.entry_id,
-                    'pdf_url': result.pdf_url,
-                    'categories': result.categories
-                }
-                papers_list.append(paper)
-                logger.debug(f"收集到arXiv论文: {paper['title']}")
+            try:
+                # 确保日期格式一致，移除时区信息进行比较
+                published_date = result.published
+                if published_date.tzinfo is not None:
+                    published_date = published_date.replace(tzinfo=None)
+                
+                # 检查发布日期
+                if published_date > date_filter:
+                    # 格式化论文数据
+                    paper = {
+                        'title': result.title,
+                        'authors': [author.name for author in result.authors],
+                        'summary': result.summary,
+                        'published_at': result.published.isoformat(),
+                        'url': result.entry_id,
+                        'pdf_url': result.pdf_url,
+                        'categories': result.categories
+                    }
+                    papers_list.append(paper)
+                    logger.debug(f"收集到arXiv论文: {paper['title']}")
+            except Exception as paper_error:
+                logger.error(f"处理单篇论文时出错: {paper_error}")
+                continue
         
         logger.info(f"arXiv论文收集完成，共{len(papers_list)}篇")
         return papers_list

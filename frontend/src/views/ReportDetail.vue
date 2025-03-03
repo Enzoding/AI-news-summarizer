@@ -49,6 +49,15 @@
               </svg>
               <span>生成于: {{ new Date(report.created_at).toLocaleString('zh-CN') }}</span>
             </div>
+            <div v-if="report.model" class="meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+                <path d="M20 2a10 10 0 0 1 0 20 10 10 0 0 1-20 0"></path>
+                <path d="M2 12h10"></path>
+                <path d="M12 2v10"></path>
+              </svg>
+              <span>使用模型: {{ formatModelName(report.model) }}</span>
+            </div>
           </div>
         </header>
 
@@ -220,6 +229,19 @@ export default {
       })
     }
 
+    const formatModelName = (modelName) => {
+      // 根据模型名称返回一个更友好的显示名称
+      if (!modelName) return '未知模型';
+      
+      const modelMap = {
+        'Grok': 'Grok AI',
+        'DeepSeek': 'DeepSeek AI',
+        'None': '未知模型'
+      };
+      
+      return modelMap[modelName] || modelName;
+    }
+
     onMounted(() => {
       fetchReport()
     })
@@ -230,7 +252,8 @@ export default {
       error,
       fetchReport,
       goBack,
-      formatDate
+      formatDate,
+      formatModelName
     }
   }
 }
