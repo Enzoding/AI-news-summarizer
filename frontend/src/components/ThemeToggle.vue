@@ -63,29 +63,26 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  background: none;
   color: var(--text-color);
-  border: 1px solid var(--border-color);
+  border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
   padding: 0;
+  transition: opacity 0.3s ease;
 }
 
 .theme-toggle-btn:hover {
-  background-color: var(--primary-color);
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px var(--shadow-color);
+  opacity: 0.7;
 }
 
 .theme-toggle-btn svg {
-  transition: transform 0.5s ease;
+  transition: opacity 0.3s ease;
 }
 
 .theme-toggle-btn:hover svg {
-  transform: rotate(30deg);
+  opacity: 0.7;
+  transform: none;
 }
 </style>
