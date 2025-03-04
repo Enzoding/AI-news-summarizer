@@ -1,5 +1,7 @@
 <template>
   <div class="app">
+    <div class="animated-bg"></div>
+    <div class="tech-dots"></div>
     <Navbar />
     <main class="main-content">
       <router-view v-slot="{ Component }">
@@ -48,6 +50,8 @@ export default {
   padding: 2rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
